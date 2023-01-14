@@ -1,0 +1,24 @@
+
+/*Estilo Global com * */
+* {
+    box-sizing: border-box;
+}
+
+.link {
+    color: rgb(0, 4, 223);
+    font-size: 30px;
+}
+.link:hover {
+    color: rgb(226, 43, 43);
+    font-size: 32px;
+}
+.link:visited{
+    color: blueviolet;
+}
+.titulo{
+    font-size: 30px;
+}
+.titulo:hover {
+    color: rgb(226, 43, 43);
+    font-size: 32px;
+}

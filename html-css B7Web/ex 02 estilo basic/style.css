@@ -1,0 +1,47 @@
+/*
+#titulo{
+    color: blueviolet;
+}
+
+.text{
+    color: rgb(0, 25, 247);
+    font-size:45px;
+}
+
+
+*/
+#Logo{
+    width: 150px;
+}
+
+#titulo {
+    font-size: normal;
+}
+.text{
+    color: blue;
+    font-weight: bold;
+}
+
+p {
+    background-color: aquamarine;
+    border-radius: 5px; /*O mpdelo de back ground para a tag p*/
+    /*
+    border: 5px dashed rebeccapurple;
+    border: 5px double rebeccapurple;
+    border: 5px groove rebeccapurple;
+    border-bottom: 5px solid rebeccapurple;
+    */
+    
+}
+
+div { /*reponável por criar um block*/
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px; /*Cria uma bola*/
+    border: 3px solid coral; /*tamanho e cor da Borda*/
+}
+
+img {
+    border: 3px solid chocolate;
+}

@@ -1,0 +1,41 @@
+
+* {
+    box-sizing: border-box;
+   
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+    
+    background-image: linear-gradient(45deg, #2152bb, #fc461d, #41fcc4 );
+    
+  
+}
+
+h1, h2 {
+    color: rgb(255, 253, 121);
+    /*Define sombreamento das letras, (direita, abaixo, esfumaçamento, cor)*/
+    text-shadow: 6px 2px 5px rgb(0, 0, 0); 
+}
+p {
+    /*text-transform: uppercase; Deixa todas as letras em maiúsculo*/
+    color: rgb(255, 255, 255);
+    font-size: 33px;
+    font-weight: bold; /*Define o estilo do texto, no caso, negrito*/
+    font-family: 'Sofia Sans Extra Condensed', Tahoma, sans-serif; /*As fontes a ser usadas*/
+    text-align: justify; /*Texto justificado. Pode ser left, right, center*/
+    letter-spacing: 0px; /*Espaço entre as letras*/
+    word-spacing: 3px; /*Espaço entre as palavras*/
+    line-height: 30px; /*Altura de uma linha para outra*/
+    text-shadow: 6px 2px 5px rgb(0, 0, 0);/*sombreamento das letras, (direita, abaixo, esfumaçamento, cor)*/
+}
+
+a {
+    text-decoration: none; /*Se o texto vai ter uma decoração fixa*/
+    color: rgb(0, 182, 24);
+}
+a:hover /*Faz alterações somente quando passa com o mouse*/{
+    text-decoration: underline; /*Coloca a decoração somente quando passar com o mouse*/
+    color: blueviolet;
+}

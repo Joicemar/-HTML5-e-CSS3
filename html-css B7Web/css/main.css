@@ -1,0 +1,32 @@
+
+* {
+    /*chave que define efeito para todos os elementos da tela*/
+    box-sizing: content-box;  /*Propriedade que vem por padrão nos elementos*/
+    background-origin: border-box; /*Define tamanho incluindo o padding e o border dos elementos já calculados */
+}
+body {
+    background-color: #3a3a3a;
+    margin: 0px;
+}
+/*padding espaçamento interno. marging o espaçamento externo da margem*/
+/*
+.text {
+    color: rgb(255, 255, 255);
+    background-color: rgb(112, 81, 151);
+    border: 3px solid rgb(214, 154, 75) ;
+    padding: 20px ;
+    margin: 20px ;
+    border: 5px solid #000;
+}
+*/
+.exemplo {
+    background-color: rgb(112, 81, 151);
+    width: 500px;
+    height: 500px;
+ 
+}
+img {
+    margin: auto; /*Automaticamente se adapta ao tamanho da div inserido*/
+    max-width: 500px;
+    min-width: 100px;
+}
