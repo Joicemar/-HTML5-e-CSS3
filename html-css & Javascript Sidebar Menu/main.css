@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #fff;
+}
+
+.navigation {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    width: 70px;
+    border-radius: 18px;
+    box-sizing: initial;
+    border-left: 5px solid rgb(144, 49, 207);
+    /*
+    border-right: 10px solid rgb(144, 49, 207);
+    */
+    background: blueviolet;
+    transition: width 0.3s;
+    overflow-x: hidden;
+}
+.navigation.active 
+{
+    width: 300px;
+}
+.navigation ul
+{/*Toda Caixa de navegação*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+
+}
+.navigation ul li
+{/*Colunas do icones*/
+    position: relative;
+    list-style: none;
+    width: 100%;
+    top: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /*
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    */
+}
+/*Efeito arredondado no cando direito do menu selecioado: Foi criado 2 tag's b, cada uma é uma caixa da cor do fundo, com o canto arredondado para dar o efeito.
+bottom -20% para arredondar a parte de baico e top para parte de cima*/
+.navigation ul li b:nth-child(1)
+{
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+.navigation ul li b:nth-child(1)::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    background: blueviolet;
+  
+}
+.navigation ul li b:nth-child(2)
+{
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+.navigation ul li b:nth-child(2)::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    background: blueviolet;
+}
+.navigation ul li.active b:nth-child(1), .navigation ul li.active b:nth-child(2)
+{
+    /*Desativa o efeito para tolas as li(colunas) que não que estiver selecionado*/
+    display: block;
+}
+/*Fim do efeito de arredondar e continuação do código*/
+
+.navigation ul li.active
+{/*Colori de branco a li(coluna) selecionada*/
+    background: #fff;
+}
+.navigation ul li a
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li.active a
+{
+    color: #333
+}
+.navigation ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 65px;
+    text-align: center;
+}
+.navigation ul li a .icon ion-icon
+{
+    font-size: 1.5em;
+}
+.navigation ul li a .title
+{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.toggle 
+{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgb(168, 146, 204);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.toggle.active 
+{
+    background: rgb(237, 100, 184);
+}
+.toggle ion-icon
+{
+    position: absolute;
+    color: #fff;
+    font-size: 34px;
+    display: none;
+}
+.toggle ion-icon.open,
+.toggle.active ion-icon.close
+{
+    display: block;
+}
+.toggle ion-icon.close,
+.toggle.active ion-icon.open
+{
+    display: none;
+}
