@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@100&display=swap"
+    rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action="login.html">
+        <!--for="nome" foca no campo-->
+        <label for="nome" >Nome Completo:<br/>
+            <input type="text" autocomplete="off"/>
+        </label>
+        
+        <label name="descricao">
+            Descrição:</br>
+            <textarea name="descricao"></textarea>
+        </label>
+
+        <label>
+            Categoria:</br>
+            <select name="categoria">
+                <option value="1">Categoria 1</option>
+                <option value="2">Categoria 2</option>
+                <option value="3">Categoria 3</option>
+                <option value="4">Categoria 4</option>
+            </select>
+        </label></br>
+
+        <label>
+            <input type="checkbox" />
+            Eu declaro que li e aceito os termos de uso.
+            <a href="termos.html" class="termoslink" target="_blank">termos de uso</a>
+        </label>
+        </br>
+        <button>Texto do botão</button>
+
+    </form>
+</body>
+</html>

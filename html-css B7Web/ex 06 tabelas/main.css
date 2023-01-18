@@ -1,0 +1,34 @@
+
+h1
+{
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+table
+{
+    width: 600px;
+
+}
+
+th, td{
+    border: 2px solid #000;
+}
+
+table thead
+{
+    background: cornflowerblue;
+}
+
+table tbody
+{
+    background: rgb(156, 170, 196);
+}
+
+tbody tr:nth-child(even)
+{/*Muda as cores das linhas pares*/
+    background-color: rgb(129, 223, 110);
+}
+tbody tr:hover
+{
+    background: rgb(197, 175, 157);
+}

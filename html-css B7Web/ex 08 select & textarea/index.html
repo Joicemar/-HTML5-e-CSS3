@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <h1>Página de teste</h1>
+
+    <h2>Área de cadastro</h2>
+    <!--Direcionamento de página-->
+    <form action="login.html" method="GET">
+
+        <select name="order" size="2" multiple><!--multiple aparece mais de um a ser selecionado-->
+            <option value="bestseller">Mais Vendidos</option>
+            <!--selected define o atrubito como padrão exibido-->
+            <option value="last" selected>Recentes</option>
+            <option value="off">Ofertas</option>
+            <option value="tendenciar">tendenciar</option>
+            <option value="baratos">Menor Preço</option>
+            <option value="caros">Maior Preço</option>
+        </select>
+
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
