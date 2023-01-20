@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!--enctype é o tipo de incriptação-->
+    <form method="POST" enctype="multipart/form-data">
+        <!--Type invisivel para passar o país-->
+        <input type="hidden" name="country" value="BR" />
+        <fieldset><!--Cria um quadrado na area-->
+            <legend>Dados Pessoais</legend>
+            <label>
+                Nome:<br/>
+                <!--Validação de tamanho minimo e maximo de caracteres-->
+                <input type="text" name="name" required minlength="2" maxlength="30"/>
+            </label><br/>
+
+            <label>
+                Sobrenome:<br/>
+                <input type="text" name="lastname" required minlength="4"  maxlength="200"/>
+            </label><br/>
+
+            <label>
+                Idade:<br/>
+                <!--step é a quantidade que a setinha vai pulas os numeros-->
+                <input type="number" name="idade" min="18"  max="130" step="1"/>
+            </label><br/>
+      
+            <label>
+                E-mail:<br/>
+                <!--Espressão regular para validar emails pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"-->
+                <input type="email" name="email" required="required" autocomplete="off" />
+            </label><br/>
+
+            <label>
+                Foto:<br/>
+                <!---->
+                <input type="file" name="foto" accept="image/*"/>
+            </label><br/>
+
+            <label>
+                PDF:<br/>
+                <!---->
+                <input type="file" name="pdf" accept="application/pdf"/>
+            </label><br/>
+            
+            <label>
+                Data de Nascimento:<br/>
+                <!---->
+                <input type="date" name="aniversario" min="18"  max=""/>
+            </label><br/>
+
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da empresa:<br/>
+                <input type="text" name="companyname" />
+            </label><br/>
+
+            <label>
+                Cargo na empresa:<br/>
+                <input type="text" name="companyjogtitle" />
+            </label><br/>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar" />
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+/*As caracteristicas mais especificadas se sobrepoem as menos.
+*/
+body
+{
+  background-color: rgb(200,120,200);
+}
+.container
+{
+  color: red;
+  width: 220px;
+  height: 180px;
+  background-color: rgb(255, 227, 66);
+}
+.container strong
+{
+  color: blue;
+}

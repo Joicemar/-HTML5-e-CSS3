@@ -1,0 +1,22 @@
+
+/* 'em' é baseado no font size pai do elemento que tá rodando; se o pai tem 2em e o filho 10, será 10 vezes 2
+; aumento progressivo em cascata*/
+/* já o 'rem' corresponde a tag html e ignora a medida do body, quando não especificado o rem será responsivo*/
+
+html{
+    font-size: 10px;
+}
+body
+{
+    font-size: 20px;
+}
+.box
+{
+    font-size: 2rem;
+}
+.box-interno
+{
+    width: 10rem;
+    height: 10rem;
+    background-color: #999;
+}
