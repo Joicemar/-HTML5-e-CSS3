@@ -1,0 +1,20 @@
+
+/*Usando a tag p conseguimos alinhar na vertical e definir tamanhos*/
+/*Usando o span conseguimos agrupar na horizontal mas não definir tamanhos*/
+/*Parâmetros display: inline é possível alinhas os p na horizontal, mas anula suas larguras*/
+/*parâmetro display: block alinha elementos do span na vertial e definir larguma, mas anula na horizontal*/
+/*Solução: Blocos embutidos inline-block permitem colocar na mesma linha e alterar a largura.*/
+p{
+    background-color: blueviolet;
+    width: 100px;
+   display: inline-block; /*inline-block permitem colocar na mesma linha e alterar a largura*/ 
+}
+span{
+    display:inline-block;/* Só o block Permite o span ficar um em baixo do outro e setar tamanho*/
+    background-color: blue;
+    width: 100px;
+}
+.second-p{
+    /*mantém o elemento mas o torna invisível*/
+    visibility: hidden;
+}

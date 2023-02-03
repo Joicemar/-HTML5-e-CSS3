@@ -1,0 +1,33 @@
+
+/*O relative só começa funcionar quando a gente usar o left. right... O relative é relativo a os que ele 
+está inserido, html, outras div etc*/
+.red
+{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    display: inline-block;
+    position: relative;
+    left: 300px;
+
+}
+.blue
+{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    display: inline-block;
+    position: relative;
+    right: 150px;
+
+}
+.yellow
+{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    display: inline-block;
+    position: relative;
+    right: 150px;
+
+}

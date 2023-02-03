@@ -1,0 +1,21 @@
+
+/*Classes podem ser aplicadas a vários elementos, id só pode repetir para um único elemento. 
+id é mais especifico e de maior prioridade no css. O id se chama com #, class com .
+Classes com mais de um nome podem ser chamadas só por um deles*/
+
+img:hover
+{
+    background-color: yellow;
+}
+.brocolis
+{
+    background-color: red;
+}
+.bacon
+{
+    background-color: green;
+}
+.circular
+{
+    border-radius: 100%;
+}

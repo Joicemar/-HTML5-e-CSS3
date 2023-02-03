@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>💻 Joicemar's Personal Site</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+ 
+</head>
+<body>
+    <table class="first" cellspacing="10">
+        <tr>
+            <!--2 td = duas celulas que se alinharão horizontalment-->
+            <td>
+                <picture>
+                    <source media="(max-width: 752px)" srcset="images/photo2.png" type="image/png">
+                    <img  src="images/photo.png"  alt="joicemar profile picture" width="232px">
+                </picture>
+                </td>
+            <td>  
+                <h1>joicemar .S. Morais</h1>
+                <!--tag p -> parágrafo -->
+                <p class="tittle"><em>Estudande de Análise e Desenvolvimento de Sistemas e 
+                    <strong> auto-didata no Desenvolvimento Web.</strong></em></p>
+                <p>Desenvolvedor web full stack. Eu ❤️ de café.</p>
+                <p>Tenho tranquilidade com Java, html e css, em constante aprendizado.</p>
+            </td>
+        </tr>
+    </table>
+    
+    <hr > <!--Cria uma linha na horizontal-->
+    <p><em></em></p>
+
+
+    <h3>Minhas redes sociais:</h3>
+    <ul>
+        <li><img src="images/github.png" alt="Logo HTML5"> 
+            <a href="https://github.com/Joicemar" target="_blank" rel="next">GitHub</href></a></li>
+        
+        <li><img src="images/linkedin.png" alt="Logo HTML5">
+            <a href="https://www.linkedin.com/in/joicemar-s-morais-ba4a691b8/" target="_blank" 
+            rel="next">Linkdin</a></li>
+    </ul>
+    </h2>
+
+
+    <h3>Cursos de tecnologia que Gosto</h3>
+    <ul>
+        <li><a href="https://www.youtube.com/@CursoemVideo"  target="_blank" rel="external">Curso em Vídeo</a></li>
+        <li><a href="https://www.jdevtreinamento.com.br"  target="_blank" rel="external">Jdev Treinamento</a></li>
+        <li><a href="https://www.youtube.com/@DevDojoBrasil"  target="_blank" rel="external">Dev Dojo </a></li>
+        <li><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"  target="_blank" 
+        rel="external">The Complete 2023 Web Development Bootcamp</a></li>
+    </ul>
+    <hr> <!--Cria uma linha na horizontal-->
+
+    <h3>Work Experience</h3>
+    <table><!--table - exibir dados estruturados-->
+        <thread><!--Razão por colocar o th em um corpo diferente é para poder trabalhar separado com essa parte-->
+            <tr><!--Linha de tabela-->
+                <th>Datas</th>
+                <th>Trabalho</th>
+            </tr>
+        </thread>
+            <tbody>
+
+            </tbody>
+        <tfoot>
+            
+        </tfoot>
+        <!--Por ser uma tabela, todas as colunas são estruturadas/alinhadas juntas-->
+        <tr><!--Uma linha--><!--Linha de tabela-->
+            <td>2018-2019</td><!--Elemento de dados ou table data element-->
+            <td>desenvolveu jogos desktop</td><!-- td Tag com contém os dados-->
+        </tr>
+        <tr>
+            <td>2008</td>
+            <td>Trabalhou com carpintaria</td>
+        </tr>
+    </table>
+      <hr> <!--Cria uma linha na horizontal-->
+
+    <h3>Skills</h3>
+
+    <table >
+        <tr>
+            <td>
+                <table >
+                    <tr>
+                        <td>Core Java</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>JSP</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Draw</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Photography</td>
+                        <td>⭐⭐</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table >
+                  
+            
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br>
+    </br>
+    <hr> <!--Cria uma linha na horizontal-->
+
+    <h4>
+        <a href="hobbies.html">Meus hobbies</a><br></br>
+    </h4>
+    <h4>
+        <a href="contato.html">Meu Contato</a><br>
+    </h4>
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+</body>
+</html>

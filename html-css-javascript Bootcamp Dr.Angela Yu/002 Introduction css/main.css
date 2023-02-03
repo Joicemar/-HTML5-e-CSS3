@@ -1,0 +1,33 @@
+
+ body
+ {
+
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/background-color*/
+    background-color: rgb(217, 243, 232);
+    /*
+    background-image: linear-gradient(45deg, #a3a3b1, #9697eb );
+    */
+    background-attachment: fixed; /*Mesmo que role o back ground fica fixo*/
+    zoom: 90%;
+}
+.first{
+    padding-top: 22px;
+}
+
+hr
+{
+    border-style: none;/*Dizendo que o estilo da borda é nenhum e só o superior será pontilhado*/
+    border-top-style: dotted; /*Cria bolinhas só para a linha superio que fica em horizontal*/
+    border-color: rgb(82, 82, 82);
+    border-width: 8px; /*Define o tamanho das bolinhas*/
+    width: 6%; /*Define o tamanho em relação a tela*/
+}
+
+h1, h3
+{
+    color: #66BFBF;
+}
+p
+{
+    font-style: normal;
+}

@@ -1,0 +1,12 @@
+
+ body
+ {
+
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/background-color*/
+    background-color: #bf0;;
+    background-attachment: fixed; /*Mesmo que role o back ground fica fixo*/
+    zoom: 90%;
+}
+.first{
+    padding-top: 22px;
+}

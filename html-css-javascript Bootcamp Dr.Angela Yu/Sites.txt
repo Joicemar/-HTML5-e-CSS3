@@ -13,3 +13,5 @@ https://www.w3schools.com
  https://crop-circle.imageonline.co
 
  https://developer.mozilla.org/pt-BR/
+
+https://www.favicon.cc

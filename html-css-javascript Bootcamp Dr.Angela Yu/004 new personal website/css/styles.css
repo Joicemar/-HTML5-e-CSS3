@@ -1,0 +1,41 @@
+
+
+body{
+    margin: 0;
+}
+
+h1{
+    margin-top: 0;
+}
+
+
+div
+{
+    background-color: #5ec0a8;
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-width: 10px;
+   
+}
+.mid-container
+{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-width: 20px;
+    position: relative;
+    margin-left: 220px;
+}
+.botton-container
+{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: relative;
+    margin-left: 460px;
+}
+.pro
+{
+    text-decoration: underline;
+}
