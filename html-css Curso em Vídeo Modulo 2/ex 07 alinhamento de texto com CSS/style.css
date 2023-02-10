@@ -1,0 +1,25 @@
+body {
+    font: normal 16px arial, Verdana, serif;
+    text-align: left;/*Por padrão o texto já vem alinhado na esquerda, o que vale é a ultima configuração*/
+}
+/*
+    em HTML é id    = em CSS é #
+    em HTML é class = em CSS é .
+*/
+
+h1#principal {
+    text-align: center;
+}
+h1 {
+    color: green;
+}
+
+
+h2 {
+    text-align: right;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px; /*Espaço do inicio do parágrafo*/
+}

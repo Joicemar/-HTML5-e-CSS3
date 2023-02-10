@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+    <style>
+        div{
+            display: inline-block;
+            background-color: blueviolet;
+            text-align: center;
+        
+        }
+        /* : significa as sub classes que definem estados. hover é uma subclasse */
+        div:hover{
+            background-color: chartreuse;
+        }
+
+        div > p {
+            /*Seletor que pega um filho da div, a div filha de p*/
+            display: none;
+        }
+
+        div:hover > p {
+            /*Ira aplicar o hover ao p que for seu filho. Se a div tiver filho p*/
+            display: block;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Contato</h3>
+    </div>
+    <div>
+        <h3>Projetos</h3>
+    </div>
+    <div>
+        <h3>Informação</h3>
+        <p>Texto escondido...</p>
+    </div>
+
+</body>
+</html>

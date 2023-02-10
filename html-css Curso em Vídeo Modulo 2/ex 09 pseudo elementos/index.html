@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Personalizando Links</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        /*
+            #  = id
+            .  = classes
+            :  = pseudo-classes
+            :: = pseudo-elementos
+            >  = filho
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(157, 130, 182);
+        }
+        /*Pseudo classes definem estados de elementos dentro do html*/
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        a:visited{
+            /*visited define uma ação caso o link já tenha sido acessado*/
+            color: brown;
+        }
+        a:hover{
+            /*hover faz alguma ação ao passar o mouse pelo elemento*/
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{/*Define ao clicar, quando tiver ativo*/
+            color: yellow;
+        }
+        .especial::after{/* :: são pseudo elementos,*/
+            content: ' ⇐ ';
+        }
+        .especial::before{
+            content: ' ⇒ ';
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="https://github.com/Joicemar">Repositório GitHub</a></h1>
+    <h1><a href="https://www.youtube.com/channel/UCjWlkcY1tVFMpWAtMhrtiyw" class="especial">Canal do Youtube</a></h1>
+    <h1><a href="https://joicemar.github.io/cv/">Site Pessoal</a></h1>
+</body>
+</html>
