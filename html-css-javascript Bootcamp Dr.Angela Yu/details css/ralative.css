@@ -1,33 +1,43 @@
 
-/*O relative só começa funcionar quando a gente usar o left. right... O relative é relativo a os que ele 
+/*O position relative só começa funcionar quando a gente usar o left. right... O relative é relativo aos que ele 
 está inserido, html, outras div etc*/
+/*O position absolute é em relação ao seu pai, que pode ser uma div, que também não deixa de ser relativa ao pai*/
+
+.container
+{
+    position: relative;
+    background-color: rgb(70, 170, 92);
+    width: 450px;
+    height: 450px;
+}
 .red
 {
+
+    background-color: red;
+    position: absolute;
     width: 150px;
     height: 150px;
-    background-color: red;
-    display: inline-block;
-    position: relative;
     left: 300px;
+    top: 300px;
 
 }
 .blue
 {
+    
+    background-color: blue;
+    position: absolute;
     width: 150px;
     height: 150px;
-    background-color: blue;
-    display: inline-block;
-    position: relative;
-    right: 150px;
-
+    left: 150px;
+    top: 150px;
 }
 .yellow
 {
+    background-color: yellow;
+    position: absolute;
     width: 150px;
     height: 150px;
-    background-color: yellow;
-    display: inline-block;
-    position: relative;
-    right: 150px;
-
+    left: 0px;
+    top: 00px;
+    position: fixed; /*mesmo que role a página esse bloco vai ficar fixado*/
 }

@@ -1,41 +1,57 @@
 
-
+/*Outra maneira de alinhar elementos é com o margin*/
 body{
+    /*Maneira de centralizar tudo que não tiver uma largura definida*/
     margin: 0;
+    text-align: center;
 }
 
 h1{
+    /*Maneira de centralizar se for um elemento de bloco(div) e tiver uma largura definida, 
+    usar esse valor automático*/
+    /*O elemento margin alinha o elemento na horizontal ou vertical*/
+    /*Direita e esquerda são definidos para o valor necessário para ficar no centro*/
+    /*
+    width: 10%;
+    margin: 0 auto 0 auto;top, direita, baixo, esquerda*/
     margin-top: 0;
 }
 
 
-div
+
+.top-container
 {
-    background-color: #5ec0a8;
-    height: 200px;
-    width: 200px;
-    border-style: solid;
-    border-width: 10px;
-   
+    background-color: aquamarine;
+    position: relative;
+    padding-top: 100px;/*Preenchimento superior para jogar os elementos para baixo*/
 }
 .mid-container
 {
-    height: 200px;
-    width: 200px;
     background-color: red;
-    border-width: 20px;
-    position: relative;
-    margin-left: 220px;
+    width: 200px;
+    height: 200px;
 }
 .botton-container
 {
-    height: 200px;
-    width: 200px;
     background-color: blue;
-    position: relative;
-    margin-left: 460px;
+    width: 200px;
+    height: 200px;
 }
 .pro
 {
     text-decoration: underline;
+}
+.bottom-cloud
+{
+    /*Para posicionar em relação a algo, um de seus pais deve ter sua posição definida como relativa.
+    Se não será relativa ao corpo*/
+    position: absolute;/*Tira o elemento do fluxo e é colocado aleatoriamente na tela*/
+    left: 300px; /*Posições em relação ao sua origem que é o container superior*/
+    bottom: 300px;
+}
+.top-cloud
+{   
+    position: absolute;
+    right: 300px;
+    top: 50px
 }
