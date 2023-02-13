@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner
+{
+    width: 100%;
+    height: 100vh;
+    /*Cria um sombra sobre a imagem, pode se criar um degrade*/
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6))
+    , url(house.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar
+{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo
+{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li
+{   /*Suficiente para deixar as opções alinhadas na horizontal*/
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative; /*Alinha na horizontal também*/
+}
+
+.navbar ul li a
+{   /*Suficiente para deixar as opções bonitinhas*/
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after
+{   /*Marca uma linha nas opções*/
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s;
+}
+
+.navbar ul li:hover::after
+{   /*Responsável por mostrar a linha na opção selecionada ou do mouse em cima*/
+    width: 100%;
+}
+
+.content
+{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 
+{
+    font-size: 70px;
+    margin-top: 8px;
+    color: #fff;
+}
+
+button
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 7px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+button:hover
+{
+    background: #fff;
+    color: black;
+    border: 2px;
+}

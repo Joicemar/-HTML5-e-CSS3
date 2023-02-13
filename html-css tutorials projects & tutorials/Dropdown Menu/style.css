@@ -13,7 +13,7 @@ section
 {
     width: 100%;
     height: 100vh;
-    background: url(bg.jpg);
+    background: url(bg.jpg);/*carrega imagem pelo css*/
     background-size: cover;
 }
 .menu
