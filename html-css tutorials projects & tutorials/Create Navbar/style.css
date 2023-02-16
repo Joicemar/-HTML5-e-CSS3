@@ -1,0 +1,31 @@
+
+body
+{
+    margin:0; /*Não deixa nenhuma margem, parte de cima e lados desse navbar*/
+}
+.navbar
+{
+    width:100%; /*Faz a largura ser 100% da horizontal*/
+    position: fixed;
+    top:30; /*Não mudou nada*/
+    background-color: silver;
+}
+ul
+{
+    list-style-type: none; /*Tira os pontos que marcam a lista desordenada*/
+    display: flex; /*Alinha na horizontal*/
+    justify-content: end; /*Junta da direita para esquerda*/
+    gap: 20px; /*Distancia de uma <li> para a outra*/
+    padding-right: 15px;
+
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+a:hover
+{
+    color: rgb(4, 0, 250);
+}
