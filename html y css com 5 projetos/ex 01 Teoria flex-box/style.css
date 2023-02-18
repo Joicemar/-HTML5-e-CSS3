@@ -1,0 +1,43 @@
+/*
+flex-direction: row-reverse; row-reverse inverto a ordem das caixas*/ 
+/*flex-direction: column-reverse; column-reverse inverto a ordem das caixas*/ 
+/* flex-direction: row; flex-direction pode definir se o flex é coluna ou filas, por padrão vem row(filas)*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.container {
+    background: black;
+    display: flex; /*flex: Define como propriedade flex-box */
+    justify-content: space-evenly; /*space-evenly deixa um espaçamento igual*/
+    align-items: center;
+    height: 100vh; /*100vh significa na metade*/
+    flex-wrap: wrap; /*responsivo para passar a caixa a um degrau a baixo quando não caber na tela*/
+    gap: 50px; /*Define espaços entre linhas e colunas*/
+}
+
+.um {
+    background: orangered;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.dois {
+    background: rgb(119, 0, 255);
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.tres {
+    background: rgb(0, 68, 255);
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
