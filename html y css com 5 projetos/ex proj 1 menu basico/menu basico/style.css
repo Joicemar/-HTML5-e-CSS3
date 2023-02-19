@@ -1,0 +1,51 @@
+
+
+body {
+    font-family: sans-serif, 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: flex;
+    background-color: rgb(48, 48, 48);
+    min-height: 70px;
+    justify-content: space-between;
+    /*align-items: center; centraliza os itens da caixa especificada no centro da vertical, ignorando o conteudo dentro de suas caixas.*/ 
+    align-items: center; 
+    /*padding para dentro ao de margin para fora*/
+    padding: 10px; /*Se Dá um espaçamento de 10px aplicado a todos os elementos */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 12px;
+}
+nav a:hover{
+    color: rgb(255, 166, 0);
+}
+/*@media (max-width: 680px): Diz que o maximo tamanho para manter a proporçao é esse que foi definido,
+depois alinhara por colunas caso seja configurado*/
+/*padding: 10px, 20px ---- [cima e em baixo], [esquerda e direita]*/
+@media (max-width: 680px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px 0px;
+    }
+ }

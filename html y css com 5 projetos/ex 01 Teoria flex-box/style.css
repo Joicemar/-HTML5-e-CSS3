@@ -1,19 +1,20 @@
-/*
-flex-direction: row-reverse; row-reverse inverto a ordem das caixas*/ 
-/*flex-direction: column-reverse; column-reverse inverto a ordem das caixas*/ 
 /* flex-direction: row; flex-direction pode definir se o flex é coluna ou filas, por padrão vem row(filas)*/
+/*
+flex-direction: row-reverse; row-reverse inverte a ordem das caixas*/ 
+/*flex-direction: column-reverse; column-reverse inverte a ordem das caixas*/ 
+/*justify-content: ......., Diz que tipo de espaçamento ficará entre as caixas*/
 
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*box não especificamente a um elemento e sim ao cropo, body*/
     font-family: sans-serif;
     background-color: black;
 }
 
 .container {
     background: black;
-    display: flex; /*flex: Define como propriedade flex-box */
+    display: flex; /*flex: Define como propriedade flex-box; dá responsividade */
     justify-content: space-evenly; /*space-evenly deixa um espaçamento igual*/
     align-items: center;
     height: 100vh; /*100vh significa na metade*/

@@ -11,7 +11,7 @@ body {
     display: flex; /*Define como flexivel para responsividade*/
     justify-content: center; /*Centra os elementos da esquerda para direita*/
     align-items: center; /*Centra de cima a baixo*/
-    height: 100vh; /*Ocupa 100* da janela, centraliza*/
+    height: 100vh; /*Ocupa 100% da janela, centraliza*/
 
 }
 
