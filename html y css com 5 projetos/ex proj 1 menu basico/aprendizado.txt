@@ -1,0 +1,14 @@
+position: absolute; /*Em relação a caixa que está inserido, no caso, .box*/
+position: relative; /*Em relação a si mesmo, a própria posição anterior*/
+
+<header><!--header para dar um cabeçalho da parte principal-->
+
+/*align-items: center; centraliza os itens da caixa especificada no centro da vertical,
+ ignorando o conteudo dentro de suas caixas.*/ 
+
+ /*padding para dentro ao de margin para fora*/
+padding: 10px; /*Se Dá um espaçamento de 10px aplicado a todos os elementos */
+
+/*@media (max-width: 680px): Diz que o maximo tamanho para manter a proporçao é esse que foi definido,
+depois alinhara por colunas caso seja configurado*/
+/*padding: 10px, 20px ---- [cima e em baixo], [esquerda e direita]*/

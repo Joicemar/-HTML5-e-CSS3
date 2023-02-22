@@ -1,0 +1,15 @@
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+}
+#Dois {
+    position: absolute; /*Em relação a caixa que está inserido, no caso, .box*/
+    position: relative; /*Em relação a si mesmo, a própria posição anterior*/
+    top: 20px;
+    left: 20px;
+    background: green;
+}

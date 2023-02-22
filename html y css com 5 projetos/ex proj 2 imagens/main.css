@@ -1,0 +1,87 @@
+/*
+1vh = 1% da altura da janela
+100vh = 100* da janela
+*/
+body {
+    font-family: sans-serif;
+    background-color: aquamarine;
+}
+
+.imagens-container {
+    /*
+    margin: 100px auto;
+    width: 500px;
+    */
+    display: flex;
+    justify-content: center; /*alinhamento para linhas*/
+    align-items: center; /*alinhamento para colunas - centro da vertical*/
+    height: 100vh;
+}
+
+.imagens-container .imagens {
+    position: relative;
+    margin-right: -20px;
+    display: inline-flex;
+    /*flex-direction: column; 
+    Esta colocando a tag img como coluna 1 e a tag span como coluna 2, vai 
+    alinha em colunas, (um em cima do outro) as divisões dessa hierarquia da 
+    tag <div class=imagens. Ficando colunas(vertical) e linhas na horizontal*/
+    flex-direction: column; 
+}
+.imagens-container .imagens img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.32s ease-in-out;/*Tempo de animação. ease-in-out, inicio ao fim*/
+}
+.imagens-container .imagens .nome {
+    position: absolute; /*Para o top funcionar. Ele define a altura do texto da imagem*/
+    background-color: black;
+    border-radius: 5px; /*border-radius - É para dar curvatura*/
+    color: white;
+    display: none;
+    min-width: 70px;
+    width: 110px;
+    top: -55px
+   /*left e padding não funcionam aqui*/
+}
+.imagens-container .imagens:hover .nome { /*Pega tudo que esta em imagens e altera o nome*/
+    left: calc(-50% -30px);
+    padding: 10px 15px;
+    display: inline-block;
+    transform: translateY(-20px);
+}
+/*Configura o texto exibido dos nomes*/
+.imagens-container .imagens .nome .text {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    width: 110px; /*Para o texto não ultrapassar o tamanho exibido no bloco. Ganhará três...*/
+    text-align: center;
+    box-sizing: border-box;
+}
+/*Cria uma seta em baixo da caixa dos nomes*/
+.imagens-container .imagens .nome::before {
+    /*before seria, em baixo do elemento? no caso se configurado como coluna e não linha*/
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 40%;
+    bottom: -24px;
+    border-top: solid 14px rgb(0, 0, 0); /*responsavel pela seta de cima para baixo*/
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+}
+
+.imagens-container .imagens:hover img{
+    transform: translateY(-11px);
+}
+@media (max-width: 680px){
+    .imagens-container {
+        flex-direction: column;
+        height: 140vh; /*Baixa os elementos para o texto caber em cima no modo coluna*/
+    }
+}

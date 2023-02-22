@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    background: black;
+    display: flex; /*Define como flexivel para responsividade*/
+    justify-content: center; /*Centra os elementos da esquerda para direita*/
+    align-items: center; /*Centra de cima a baixo*/
+    height: 100vh; /*Ocupa 100* da janela, centraliza*/
+
+}
+
+.boxcontainer {
+    background: blueviolet;
+    /*vh en 100 copuca 100% do espaço da sua caixa pai*/
+    height: 400px;
+    width: 400px;
+    /*Centralizando uma caixa dentro de outra*/
+    display: flex; /*Define como flexivel para responsividade*/
+    justify-content: center; /*Centra os elementos da esquerda para direita*/
+    align-items: center; /*Centra de cima a baixo*/
+}
+.um {
+    background: orangered;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
