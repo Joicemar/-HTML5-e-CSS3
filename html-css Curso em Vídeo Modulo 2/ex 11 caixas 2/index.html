@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Grouping Tags</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 22px 0px;
+            box-shadow: 2px 2px 4px 1px black;
+        }
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px; 
+        }
+        article {
+            background-color: lightgray;
+            padding: 8px;
+        }
+
+        article > aside {
+            background-color: rgb(141, 141, 141);
+        }
+        
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        nav {
+            background-color: lightgray;
+            box-shadow: 2px 4px 1px 1px rgb(44, 44, 44);
+        }
+        nav > a {
+            text-decoration: none;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!---->
+    <header>
+        <h>Div's Semanticas</h>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes, ciência e tecnologia. </p>
+        </section>
+        <section id="noticias">
+            <article> <!--Artigos do site-->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Earum pariatur ad magnam expedita sint itaque repellat
+                      quas et molestias, alias hic eius sequi reiciendis rerum 
+                      cum provident dolorum? Repudiandae, a.</p>
+                <aside>Relativo ao artigo: Escrito por Jose da Silvas</aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo Curso em vídeo</p>
+    </footer>
+
+</body>
+</html>
