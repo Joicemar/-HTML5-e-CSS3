@@ -1,0 +1,225 @@
+
+@font-face { 
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf')format('opentype'),
+         url('fontes/idroid.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    font-family: sans-scerif;
+    font-size: 15pt;
+    line-height: 2em; /*Espaço entre linhas*/
+    /*usar o text-indent aqui aplicará até mesmo a imagens*/
+}
+
+body
+{
+    background-color: #EBE5C5;
+}
+header
+{
+    background-image: linear-gradient(to top, rgb(16, 61, 29), rgb(25, 107, 62), rgb(52, 175, 97) );
+    padding-top: 10px;
+    border: none;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0px 5px 15px rgb(112, 112, 112); 
+}
+
+.head
+{
+    text-align: center;
+    color: white;
+}
+
+.head h1
+{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 1px rgb(39, 39, 39);
+    margin: 7px;
+    padding-top: 2%;
+    font-size: 22pt;
+    transform: scale(1, 1.8); /*Redimensionando dimensões X e Y separadamente*/
+}
+
+.head h3
+{
+    font-family: 'M PLUS 1p', sans-serif;
+    margin: 10px;
+    padding: 32px;
+    text-shadow: 1px 2px 2px rgb(34, 34, 34);
+}
+
+.menu
+{
+    padding: 7px;
+    padding-bottom: 10px;
+    
+}
+.menu nav a
+{
+    font-family: 'M PLUS 1p', sans-serif;
+    text-decoration: none;
+    color: #adfad0;
+    text-shadow: 1px 1px 1px rgb(5, 56, 0);
+    font-weight: 900;
+    border-radius: 7px 7px 7px 7px;
+    padding: 12px;
+    transition: 0.3s;
+}
+.menu nav a:hover
+{
+    background-color: #83E1AD;
+    color: #003f1c;
+}
+/*Main*/
+main {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    /*Centralizando um bloco - início*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    /*Centralizando um bloco - fim*/
+    padding: 0px;
+    box-shadow: 2px 2px 12px 14px rgba(0, 0, 0, 0.2);
+}
+.introduction
+{
+   
+}
+
+.texto
+{
+    margin: 16px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-indent: 1em;/*Espaço no inicio de parágrafo*/
+    font-size: 15pt;
+    line-height: 2em;
+}
+
+.link 
+{
+    color: #003f1c;
+    background-color: #4bf7a6;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 2px 6px 1px 6px; 
+}
+
+.link:hover
+{
+    color: #04853e;
+    text-decoration: underline;
+}
+
+main section div h1
+{
+    margin: 16px;
+    font-size: 22pt;
+    color: #024e25;
+    font-family: 'idroid';
+    font-weight: 100;
+}
+
+main section div h3
+{
+    margin: 16px;
+    font-size: 16pt;
+    color: #0a501b;
+    font-family: 'idroid';
+    background-image: linear-gradient(to right ,rgb(88, 235, 178), rgb(169, 253, 207), rgb(255, 255, 255));
+}
+
+.dan-droids img
+{
+    width: 100%;
+}
+.dan-droids p
+{
+    margin: 16px;
+    text-indent: 1em;
+}
+
+.texto-verde
+{
+    color: #006909;
+    font-weight: 900;
+}
+
+.sub-title2 h2
+{
+    margin: 16px;
+    font-size: 16pt;
+    color: #0a501b;
+    font-family: 'idroid';
+    background-image: linear-gradient(to right ,rgb(88, 235, 178), rgb(169, 253, 207), rgb(255, 255, 255));
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sub-title2 p
+{
+    margin: 16px;
+    text-indent: 1em; /*Espaço no início de parágrafo*/
+}
+
+main section .irina-blok p
+{
+    margin: 16px;
+    text-indent: 1em; /*Espaço no início de parágrafo*/
+}
+
+.irina-blok picture img
+{
+    width: 100%;
+}
+
+.bugdroid img
+{
+    /*Inicio - Transformar em bloco para poder centralizar a imagem*/
+    margin: auto;
+    display: block;
+    /*Transformar em bloco para poder centralizar a imagem - fim*/
+    /*Inicio - Redimensionar imagem*/
+    max-width:400px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+    /*Redimensionar imagem - fim*/
+}
+
+section .video
+{
+    background-color: #024e25;
+    padding: 25px 44px;
+}
+section .video iframe
+{
+    width: 100%;
+}
+
+
+@media (max-width: 1700px)
+{
+    section .video iframe {
+        height: 600px;
+    }
+}
+@media (max-width: 680px)
+{
+    section .video iframe {
+        height: 420px;
+    }
+}
+@media (max-width: 380px)
+{
+    section .video iframe {
+        height: 300px;
+    }
+}
