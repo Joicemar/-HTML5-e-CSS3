@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Mascote do Android</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <!--Font Roboto-->
@@ -63,7 +63,11 @@
             </article>
 
             <div class="dan-droids">
-                <img src="imagens/dan-droids.png">
+                <picture>
+                    <source media="(max-width: 650px)" srcset="imagens/dan-droids-pq.png" type="image/jpg">
+                    <source media="(max-width: 1100px)" srcset="imagens/dan-droids.png" type="image/jpg">
+                    <img src="imagens/dan-droids.png">
+                </picture>
                 <p>
                     Essa primeira versão bizarra até foi batizada em homenagem ao 
                     seu criador: seriam os <a class="texto-verde">Dandroids</a>.
@@ -83,8 +87,8 @@
 
             <div class="irina-blok">
                 <picture>
-                    <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
-                    <source media="(max-width: 1100px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+                    <source media="(max-width: 650px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+                    <source media="(max-width: 1100px)" srcset="imagens/irina-blok.jpg" type="image/jpg">
                     <img src="imagens/irina-blok.jpg" alt="Imagem-flexível">
                 </picture>
                 <p>
@@ -111,9 +115,50 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             </div>
-        </section>
-        <section class="video">
-        </section>
+
+            <section class="final">
+                <div>
+                    <h2>Quer aprender mais?</h2>
+                    <p>
+                        Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada 
+                        em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.
+                    </p>
+                    <div>
+                        <lu>
+                            <li><a>✔️</a><a class="item"> 1.5 - Cupcake</a></li>
+                            <li><a>✔️</a><a class="item">1.6 - Donut</a></tr></li>
+                            <li><a>✔️</a><a class="item">3.0 - Eclair</a></li>
+                            <li><a>✔️</a><a class="item"> 2.3 - Gingerbread</a></li>
+                            <li><a>✔️</a><a class="item">3.0 - Honeycomb</a></li>
+                            <li><a>✔️</a><a class="item">4.0 - Ice Cream Sandwich</a></li>
+                        </lu>
+                        <lu class="lu2">
+                            <li><a>✔️</a><a class="item"> 1.5 - Cupcake</a></li>
+                            <li><a>✔️</a><a class="item">1.6 - Donut</a></tr></li>
+                            <li><a>✔️</a><a class="item">3.0 - Eclair</a></li>
+                            <li><a>✔️</a><a class="item"> 2.3 - Gingerbread</a></li>
+                            <li><a>✔️</a><a class="item">3.0 - Honeycomb</a></li>
+                            <li><a>✔️</a><a class="item">4.0 - Ice Cream Sandwich</a></li>
+                        </lu>
+                    </div>
+                    <p>
+                        Infelizmente, o <a class="texto-verde">Android Q</a> não existiu, pois o Google resolveu pôr 
+                        fim a essa divertida prática e começou a usar numerações, o que 
+                        deu origem ao <a class="texto-verde">Android 10</a>.
+                    </p>
+                    <p>
+                        Acesse aqui o site <a href="https://www.android.com/intl/en_uk/history/#/donut"
+                        target="_blank" id="link">
+                        Android History🔗</a> para conhecer a sequência
+                        das versões "adocicadas" e o que cada uma trouxe para o sistema
+                        Android.
+                    </p>
+                </div>
+            </section>
+        <p id="termino">
+            Então é isso! Espero que você tenha gostado do nosso artigo com essa 
+            curiosidade sobre o sistema Android e seu simpático mascote.
+        </p>
     </main>
 </body>
 </html>

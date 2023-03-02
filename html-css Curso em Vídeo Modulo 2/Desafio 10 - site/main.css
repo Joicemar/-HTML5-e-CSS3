@@ -69,7 +69,7 @@ header
     font-weight: 900;
     border-radius: 7px 7px 7px 7px;
     padding: 12px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .menu nav a:hover
 {
@@ -83,14 +83,12 @@ main {
     /*Centralizando um bloco - início*/
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
+    margin-bottom: 70px;
+    width: 70%;
     /*Centralizando um bloco - fim*/
     padding: 0px;
-    box-shadow: 2px 2px 12px 14px rgba(0, 0, 0, 0.2);
-}
-.introduction
-{
-   
+    box-shadow: 2px 2px 12px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 12px 12px;
 }
 
 .texto
@@ -129,6 +127,7 @@ main section div h1
 
 main section div h3
 {
+    padding: 0px 0px 0px 10px;
     margin: 16px;
     font-size: 16pt;
     color: #0a501b;
@@ -154,7 +153,8 @@ main section div h3
 
 .sub-title2 h2
 {
-    margin: 16px;
+    margin-left: 16px;
+    padding: 0px 0px 0px 10px;
     font-size: 16pt;
     color: #0a501b;
     font-family: 'idroid';
@@ -171,13 +171,19 @@ main section div h3
 
 main section .irina-blok p
 {
-    margin: 16px;
     text-indent: 1em; /*Espaço no início de parágrafo*/
 }
 
 .irina-blok picture img
 {
+    border-color: white;
     width: 100%;
+}
+
+.irina-blok
+{
+    margin-left:16px;/*Aplicar a margem na caixa e não direto na imagem*/
+    margin-right:16px;/*Aplicar a margem na caixa e não direto na imagem*/
 }
 
 .bugdroid img
@@ -208,18 +214,151 @@ section .video iframe
 @media (max-width: 1700px)
 {
     section .video iframe {
-        height: 600px;
+        height: 500px;
     }
 }
-@media (max-width: 680px)
+@media (max-width: 1500px)
 {
     section .video iframe {
         height: 420px;
     }
+    main {
+        width: 76%;
+    }
 }
-@media (max-width: 380px)
+@media (max-width: 1420px)
 {
     section .video iframe {
-        height: 300px;
+        height: 420px;
     }
+    main {
+        width: 82%;
+    }
+}
+@media (max-width: 1420px)
+{
+    section .video iframe {
+        height: 420px;
+    }
+    main {
+        width: 86%;
+    }
+}
+@media (max-width: 1300px)
+{
+    section .video iframe {
+        height: 420px;
+    }
+    main {
+        width: 91%;
+    }
+    .final div .lu2 
+    {
+        margin-left: 0%;
+    }
+}
+@media (max-width: 1100px)
+{
+    section .video iframe {
+        height: 350px;
+    }
+}
+@media (max-width: 900px)
+{
+    section .video iframe {
+        height: 200px;
+    }
+    main {
+        width: 100%;
+    }
+    .final div lu.lu2 {
+        margin-left: 12%;
+    }
+}
+@media (max-width: 600px)
+{
+    section .video iframe {
+        height: 130px;
+    }
+    main {
+        width: 96%;
+        text-indent: 0em;
+    }
+    .final div lu.lu2 {
+        margin-left: 8%;
+    }
+}
+@media (max-width: 480px)
+{
+    section .video iframe {
+        height: 110px;
+    }
+    .final div lu.lu2 {
+        margin-left: 0%;
+    }
+}
+
+.final
+{
+    margin: 16px;
+    text-indent: 1em;
+    background-color: #83E1AD;
+    margin-bottom: 50px;
+    border-radius: 7px 7px 7px 7px;
+}
+
+.final p
+{
+    padding: 16px;
+}
+
+.final div lu li
+{
+    list-style: none; /*Retira os simbolos das colunas*/
+}
+
+.final div lu li .item
+{
+    padding-left: 15px;
+    font-size: 13pt;
+    flex: none;
+}
+
+.final div .lu2 
+{
+    margin-left: 22%;
+}
+
+.final div h2
+{
+    background-color: #1A5C37;
+    border-radius: 7px 7px 0px 0px;
+    color: white;
+}
+.final div div
+{
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
+    flex-flow: row;
+}
+
+main #termino
+{
+    text-indent: 1em;
+    margin: 16px;
+}
+
+#link
+{
+    color: #003f1c;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 2px 6px 1px 6px;
+    font-size: 13pt; 
+}
+
+#link:hover
+{
+    text-decoration: underline;
 }
