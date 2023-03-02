@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    /*em diretórios .. significa voltar uma pasta*/
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+/*
+*/
+/*Variáveis globais em css: */
+:root
+{
+    --cor01: #e8fff2;
+    --cor02: #83e1ad;
+    --cor03: #3ddc84;
+    --cor04: #2fa866;
+    --cor05: #1a5c37;
+    --cor06: #063d1e;
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: 'Android', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: rgb(212, 185, 150);
+    font-family: var(--font-padrao);
+}
+
+header
+{
+    background-color: var(--cor05);
+}
+
+header > h1
+{
+    color: white;
+    font-family: var(--font-destaque);
+}
+
+header > p
+{
+    color: white;
+}
+
+nav
+{ background-color: var(--cor05);
+
+}
+
+main h1
+{
+    color: var(--cor06);
+    font-family: var(--font-android)
+}
+
+main h2 
+{
+    color: var(--cor04);
+    font-family: var(--font-android);
+}
+
+footer
+{
+    background-color: var(--cor06);
+    color: white;
+}

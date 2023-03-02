@@ -2,8 +2,12 @@ https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
 
 https://color.adobe.com/pt/create
 
-https://coolors.co
+https://coolors.co  
 
-https://emojipedia.org/file-folder/
+https://emojipedia.org/file-folder/  -- banco de emogis
 
-https://app.netlify.com
+https://app.netlify.com  -- Site para hospedar sites
+
+https://www.mockflow.com  -- Ferramenta para planejar o site
+
+atalho: ctrl + shift + p -- workflow -- env --
