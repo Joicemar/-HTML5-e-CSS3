@@ -11,18 +11,16 @@
     <header>
         <h1>Curiosidades de Tecnologia</h1>
         <p>
-            <h1>Curiosidades de Tecnologia</h1>
-
             <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
 
         </p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Notícias</a>
-        <a href="#">Curiosidades</a>
-        <a href="#">Fale Conosco</a>
-    </nav>
     <main>
         <article>
             <h1>História do Mascote do Android</h1>
@@ -40,16 +38,19 @@
             <p>
                 A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor
                 chamado <a href="https://androidcommunity.com/dan-morrill-shows-us-
-                the-android-mascot-that-almost-was-20130103/" target="_blank">
+                the-android-mascot-that-almost-was-20130103/" target="_blank" class="externo">
                 Dan Morrill</a>. Ele conta que abriu o 
-                <a href="https://inkscape.org/pt-br/" target="_blank">Inkscape</a> 
+                <a href="https://inkscape.org/pt-br/" target="_blank" class="externo">Inkscape</a> 
                 (software livre para vetorização
                 de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o
                 sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a
                 criação de um mascote.
             </p>
 
-            <img src="imagens/dan-droids.png" alt="Primeiro mascote do Android">
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/dan-droids-pq.png">
+                <img src="imagens/dan-droids.png" alt="Bugdroig">
+            </picture>
 
             <p>
                 Essa primeira versão bizarra até foi batizada em homenagem ao seu criador:
@@ -61,11 +62,14 @@
             <p>
                 A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma
                 profissional da área. A ilustradora Russa 
-                <a href="https://www.irinablok.com/">Irina Blok</a>, também funcionária do Google,
+                <a href="https://www.irinablok.com/"  target="_blank" class="externo">Irina Blok</a>, também funcionária do Google,
                 ficou com a missão de representar o pequeno robô de uma maneira mais agradável.
             </p>
 
-            <img src="imagens/irina-blok.jpg" alt="Criadora do Budgroid">
+            <picture name="irina-blok">
+                <source media="(max-width: 670px)" srcset="imagens/irina-blok-pq.jpg">
+                <img src="imagens/irina-blok.jpg" alt="Bugdroig">
+            </picture>
 
             <p>
                 A ideia principal da Irina era representar tudo graficamente com poucos traços e de
@@ -73,7 +77,10 @@
                 Surgiu então o <strong>Bugdroid</strong>, o novo mascote do Android.
             </p>
 
-            <img src="imagens/bugdroid.png" alt="Bugdroig">
+
+            <picture class="bugdroid">
+                <img src="imagens/bugdroid.png" alt="Bugdroig">
+            </picture>
 
             <p>
                 A principal inspiração para os traços do novo <strong>Bugdroid</strong> 
@@ -84,12 +91,14 @@
                 banheiros e a identificação foi imediata: simples, limpo, objetivo.
             </p>
 
-            <iframe width="560" height="415" src="https://www.youtube.com/embed/l2UDgpLz20M" 
-            title="YouTube video player" frameborder="0" allowfullscreen
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+            <div class="video">
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/l2UDgpLz20M"
+                title="YouTube video player" frameborder="0" allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
 
-            <asside>
+            <aside> <!--conteúdo periférifo, curiosidades-->
                 <h3>Quer aprender mais?</h3>
                 
                 <p>
@@ -141,9 +150,9 @@
                     <li>
                         8.0 - <abbr title="Oreo">Oreo</abbr>
                     </li>
-                    <lu>
+                    <li>
                         9.0 - <abbr title="Torta">Pie</abbr>
-                    </lu>
+                    </li>
                 </ul>
 
                 <p>
@@ -152,11 +161,12 @@
                 </p>
 
                 <p>
-                    Acesse aqui o site <a href="https://www.android.com/intl/pt-BR_br/history/">
+                    Acesse aqui o site <a href="https://www.android.com/intl/pt-BR_br/history/"  target="_blank"
+                    class="externo">
                     Android History</a> para conhecer a sequência das versões "adocicadas"
                     e o que cada uma trouxe para o sistema Android.
                 </p>
-            </asside>
+            </aside>
 
             <p>
                 Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o
@@ -167,7 +177,9 @@
         </article>
     </main>
     <footer>
-        <p>Site criado o curso em vídeo</p>
+        <p><a href="https://www.youtube.com/playlist?list=PLHz_
+            AreHm4dlUpEXkY1AyVLQGcpSgVF8s" target="_blank" class="externo">
+            Site criado no curso em vídeo</a></p>
     </footer>
 </body>
 </html>

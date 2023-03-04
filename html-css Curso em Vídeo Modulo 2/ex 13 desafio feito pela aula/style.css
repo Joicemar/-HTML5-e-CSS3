@@ -29,29 +29,130 @@
 
 body
 {
-    background-color: rgb(212, 185, 150);
     font-family: var(--font-padrao);
+}
+
+a.externo::after
+{
+    content: '\1F517';
+}
+
+main p
+{
+    margin: 15px 0px 15px 0px;
+    text-indent: 14pt; /*espaço inicio de parágrafo*/
+    line-height: 2em; /*Espaço entre linhas*/
+    word-spacing: 2pt; /*espaço entre palavas*/
+}
+
+main strong
+{
+    color: var(--cor05);
+    font-weight: bold;
+    font-size: 1em;
 }
 
 header
 {
+    background-image: linear-gradient(to bottom, var(--cor04), var(--cor06));
     background-color: var(--cor05);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    box-shadow: 0px 5px 15px rgb(112, 112, 112);
+}
+
+main a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor06);
+    background-color: var(--cor02);
+    padding: 2px 5px; /*padding: X Y*/
+    border-radius: 5px;
+    
+}
+
+main a:hover
+{
+    text-decoration: underline;
+    color:var(--cor05)
 }
 
 header > h1
 {
     color: white;
     font-family: var(--font-destaque);
+    padding-top: 40px;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 3px black;
+    font-size: 32pt;
+    font-weight: normal;
 }
 
 header > p
 {
     color: white;
+    font-size: 1.2em;
+    color: white;
+    padding-inline: 20px;
+    padding-bottom: 20px;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 1px 2px 3px black;
 }
 
-nav
-{ background-color: var(--cor05);
+body nav
+{ 
+    padding-block: 10px; 
+    text-align: left;
+    margin-left: 2%;
+}
 
+nav a
+{
+    text-decoration: none;
+    color: #adfad0;
+    text-shadow: 1px 1px 2px rgb(34, 34, 34);
+    font-weight: 700;
+    border-radius: 7px 7px 7px 7px;
+    padding: 7px;
+    margin-left: 10px;
+    transition: 0.2s;
+    border-radius: 4px;
+}
+
+nav a:hover
+{
+    color: #0f4b00;
+    background-color: #61cc73;
+    
+}
+
+main
+{
+    background-color: white;
+    padding: 20px;
+    max-width: 1000px; /*Maximo da caixa - depois a margin é automatico*/
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 12px 2px rgb(58, 58, 58);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img
+{
+    width: 100%;
+}
+
+.bugdroid
+{
+    width: 50%;
+    max-width: 350px;
+    display: block; /*Transformando a imagem em bloco para poder trabalhar com tamanhos*/
+    margin: auto;
 }
 
 main h1
@@ -62,12 +163,84 @@ main h1
 
 main h2 
 {
-    color: var(--cor04);
+    color: var(--cor05);
     font-family: var(--font-android);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+    text-indent: 8px;
 }
 
 footer
 {
     background-color: var(--cor06);
     color: white;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 32px;
+}
+
+footer p a
+{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer p a:hover
+{
+    text-decoration: underline;
+    color: var(--cor02)
+}
+
+aside
+{
+    background-color: #83e1ad;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px black;
+}
+
+aside > ul
+{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\1F5F8\00A0\00A0'; /*Codepoints do emogipedia, não compatível com todos navegadores. 00A0 espaço*/
+}
+
+aside > h3
+{
+    background-color: #0f4b00;
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 00px 0px; /*up left, up right, down left, down right*/
+
+}
+
+
+iframe
+{
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: 300px;
+    padding: 5px
+}
+/*Responsive video*/
+.video
+{
+    background-color: #0f4b00;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 55%; /*para mexer na adaptação do video*/
+    position: relative;
+}
+
+div.video > iframe
+{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
