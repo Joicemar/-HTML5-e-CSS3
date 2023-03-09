@@ -1,0 +1,21 @@
+
+body
+{
+    background-color: rgb(41, 41, 41);
+}
+.box
+{
+    color: red;
+    font-style: italic;
+    background-color: rgb(41, 41, 41);
+}
+h1{
+    color: blue;
+    background-color: rgb(41, 41, 41);
+}
+/*Exemplo de uso do inherit; ele serve para erdar configurações da sua tag pai*/
+.box h1
+{
+    color: inherit;
+    border: 2px solid currentColor;/*currentColor pega a cor do pai*/
+}

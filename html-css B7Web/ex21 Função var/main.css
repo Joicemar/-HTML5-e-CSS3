@@ -1,0 +1,16 @@
+
+:root{
+    --br-color:#df9abd;
+    --br-font:#3d489f;
+    --br-second:#44c6c6;
+}
+
+body
+{
+    background-color: var(--br-font);
+}
+
+h1{
+    color: var(--br-second);
+    background-color: var(--br-color);
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        img {
+            width:400px;
+            height: 400px;
+            object-fit: fill; /*Distorce a imagem para caber*/
+            object-fit: contain; /*Imagem diminui mas mantem um corpo do tamanho definido. Sobra partes brancas além da imagem*/
+            object-fit: cover; /*mantem a proporção mas corta a imagem no cantos*/
+            object-fit: scale-down; /*Igual ao contain mas diminui a qualidade*/
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=480&h=320"/>
+</body>
+</html>

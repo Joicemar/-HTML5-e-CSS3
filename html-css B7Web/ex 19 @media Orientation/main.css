@@ -1,0 +1,33 @@
+
+*
+{
+    
+}
+
+body{
+    display: flex;
+    width: 100%;
+    background-color: aquamarine;
+    justify-content: center; /*para o modo linha*/
+    align-items: center; /*Para o modo coluna*/
+}
+
+div
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+/*Propriedades que trabalharam a partir da proporção de tela disponível*/
+@media (orientation: landscape) /*caso a largura maior*/
+{
+    body {
+        flex-direction: row;
+    }
+}
+@media (orientation: portrait) /*calo a altura maior*/
+{
+    body {
+        flex-direction: column;
+    }
+}   
