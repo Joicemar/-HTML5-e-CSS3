@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Sling Academy</title>
+
+ 
+</head>
+
+<body>
+
+    <main>
+        <div class="text"><h2>Comece a rolar para ver acontecer</h2></div>
+        <div class="springgreen"><h2>springgreen</h2> </div>
+        <div class="cornflowerblue"><h2>cornflowerblue</h2> </div>
+        <div class="coral"><h2>coral</h2> </div>
+        <div class="slateblue"><h2>slateblue</h2> </div>
+        <div class="purple"><h2>purple</h2> </div>
+        <div class="red"><h2>red</h2> </div>
+    </main>
+
+    <script>
+        var body = document.getElementsByTagName('body')[0];
+        body.style.backgroundColor = 'rebeccapurple';
+
+        var size = 650;
+        // trigger this function every time the user scrolls
+        window.onscroll = function (event) {
+            var scroll = window.pageYOffset;
+            scroll = scroll + 170;
+            if (scroll < size) {
+                body.style.backgroundColor = 'rebeccapurple';
+            } 
+            else if (scroll >= size && scroll < size*2) {
+                
+                body.style.backgroundColor = 'springgreen';
+            } 
+            else if (scroll >= size*2 && scroll < size*3) {
+                
+                body.style.backgroundColor = 'cornflowerblue';
+            } 
+            else if (scroll >= size*3 && scroll < size*4) {
+
+                body.style.backgroundColor = 'coral';
+            } 
+            else if (scroll >= size*4 && scroll < size*5) {
+
+                body.style.backgroundColor = 'slateblue';
+            } 
+            else if (scroll >= size*5 && scroll < size*6) {
+
+                body.style.backgroundColor = 'purple';
+            } 
+            else {
+                body.style.backgroundColor = 'rgb(255, 79, 79)';
+            }
+        }
+    </script>
+</body>
+
+</html>
