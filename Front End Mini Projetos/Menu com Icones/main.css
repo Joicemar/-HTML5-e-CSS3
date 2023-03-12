@@ -1,0 +1,90 @@
+
+
+.sidebar
+{
+    background-color: rgb(32, 22, 49);
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.nav-links
+{
+    padding: 12px 0px 12px 4px;
+}
+
+.nav-header
+{
+    padding-inline: 16px;
+}
+
+.logo{
+    color: whitesmoke;
+}
+p{
+    color: white;
+    margin: 0px;
+}
+
+.input
+{
+    display: flex;
+}
+
+i
+{
+    color: white;
+    font-size: 30px;
+}
+
+li 
+{
+    list-style: none;
+    border-radius: 6px 16px 16px 6px;
+    padding-left: 10px;
+    width: 164px;
+}
+
+li a
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: .5s;
+}
+
+li:hover
+{
+    background-color: darkmagenta;
+}
+.input:hover{
+    background-color: rgb(32, 22, 49);
+}
+
+
+span
+{
+    padding: 12px;
+}
+
+.tooltip
+{
+    display: none;
+}
+
+.title
+{
+    color: white;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 16pt;
+}
+
+.theme-wrapper p 
+{
+    color: whitesmoke;
+}

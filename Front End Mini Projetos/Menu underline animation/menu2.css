@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    font-weight: bolder;
+    font-size: 20pt;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+a:hover
+{
+    color: rgb(255, 1, 1);
+}
+
+li
+{
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+}
+nav
+{
+    gap: 33px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: lightblue;
+    padding-top: 12px;
+}
+
+.line
+{
+    background-color: rgb(255, 217, 0);
+    width: 0px;
+    height: 5px;
+    border-radius: 7px;
+    transition: 1.2s;
+    /*centralizando com margin auto: */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.line-top
+{
+    background-color: rgb(255, 238, 0);
+    width: 0px;
+    height: 5px;
+    border-radius: 7px;
+    transition: 1.2s;
+    /*centralizando com margin auto: */
+    margin-right: auto;
+}
+
+li:hover .line 
+{
+    width: 100%;
+}
+li:hover .line-top 
+{
+    width: 100%;
+}
+
