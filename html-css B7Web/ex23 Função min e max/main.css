@@ -1,0 +1,12 @@
+
+
+
+img{
+    /*Mantém o que for maior; tela passando de 
+    600px passa a ser maior, o valor de 50%*/
+    width: max(50%, 300px);
+}
+.img{
+    /*Mantém o menor valor*/
+    width: min(40%, 350px);
+}

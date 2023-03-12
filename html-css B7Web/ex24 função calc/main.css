@@ -1,0 +1,11 @@
+
+
+.container
+{
+    /*Pega 100% da largura mas mantém 20px de distância
+    indenpendente da largura*/
+    width: calc(100% - 80px);
+    margin: auto;
+    height: 200px;
+    background-color: slategray;
+}
