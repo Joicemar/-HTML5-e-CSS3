@@ -1,0 +1,58 @@
+
+
+header
+{
+    background: rgb(29, 13, 44);
+    height: 100px;
+    width: max(100% - 30px);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar
+{
+    cursor: pointer;
+    display: block;
+    padding: 29px;
+}
+.bar div
+{
+    width: 64px;
+    height: 4px;
+    background: #fff;
+    margin: 8px;
+    transition: .2s;
+}
+
+.container
+{
+    width: max(00% - 30px);
+    height: 50vh;
+    background:rgb(29, 70, 145);
+    margin-left: 15px;
+    transition: .5s;
+}
+
+.container.active
+{
+    background: aqua;    
+    width: max(100% - 30px);
+}
+/* 
+    opacity: 0;
+*/
+.bar.active .line1 {
+    position: relative;
+    transform: rotate(-45deg) translate(-2px, 2px);
+}
+
+.bar.active .line2 {
+    position: absolute;
+    transform: rotate(-45deg) translate(12px, -12px);
+  }
+  
+  .bar.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
