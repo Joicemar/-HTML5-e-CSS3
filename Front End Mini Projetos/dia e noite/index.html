@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="light-theme">
+    <header>
+      <h1>Meu Site</h1>
+      <button class="button"></button>
+      <p>
+        O JavaScript é usado para alternar entre os temas de dia e noite. <br>
+        Quando o botão é clicado, o código verifica se o corpo da página tem a 
+        <br>classe "light-theme". Se sim, ele adiciona a classe "dark-theme" e <br>
+        remove a classe "light-theme", e vice-versa. Isso altera a cor de fundo e a<br>
+         cor do texto da página, bem como o estilo do cabeçalho e do rodapé.
+      </p>
+      <h3>No código JavaScript que você me mostrou, se eu invertesse <br>
+        a ordem do "light-theme" e "dark-theme" iria funcionar igualmente?</h3>
+        <p>
+            Sim, você pode inverter a ordem das classes "light-theme" e "dark-theme" no CSS e 
+            no JavaScript e ainda funcionará da mesma maneira.
+
+A ordem das classes no CSS não importa, pois o navegador irá aplicar o estilo de acordo com a
+ especificidade do seletor e a ordem em que os estilos foram definidos.
+
+No JavaScript, a ordem das classes também não importa, pois a função toggle usada
+ em classList.toggle('light-theme') e classList.toggle('dark-theme') remove a classe que 
+ já existe e adiciona a classe que não existe. Então, se a ordem das classes no código JavaScript
+  for invertida, o resultado final ainda será o mesmo.
+        </p>
+    </header>
+    <main>
+      <p>Bem-vindo ao meu site!</p>
+      <button class="button"></button>
+    </main>
+    <footer>
+      <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

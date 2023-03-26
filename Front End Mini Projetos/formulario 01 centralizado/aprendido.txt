@@ -1,0 +1,2 @@
+Para a caixa de input não sair para fora do formulário quando estiver com 
+width: 100%; colocar o padding soment para top e bottom.
