@@ -1,0 +1,112 @@
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+}
+
+body
+{
+    background-color: #333;
+}
+.fundo.night
+{
+    background-color: #fff;
+}
+header
+{
+    width: 100%;
+    height: 120px;
+    background-color: darkslateblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: fixed;
+}
+header h1
+{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', Impact;
+    color: #cccaca;
+    font-weight: 300;
+}
+
+.frases-tecnologia
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.frases-tecnologia section
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.frases-tecnologia h3
+{
+    background-color: cadetblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+.frases-tecnologia h3, p
+{
+    font-family: sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+    color: #fff;
+    margin-inline: 16px;
+}
+.frases-tecnologia section div
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.frases-tecnologia section div p
+{
+
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 11pt;
+    margin: 3px;
+}
+
+footer
+{
+    width: 100%;
+    height: 200px;
+    color: darkslateblue;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13pt;
+  }
+  .dark-theme .button {
+    background-color: #84b4db;
+    color: #333;
+  }
+  
+  .light-theme {
+    background-color: #cecece;
+    color: #333;
+  }
+  .light-theme .frases-tecnologia section div p{
+    color: #333;
+  }
+  
