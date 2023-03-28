@@ -11,10 +11,7 @@ body
 {
     background-color: #333;
 }
-.fundo.night
-{
-    background-color: #fff;
-}
+
 header
 {
     width: 100%;
@@ -25,13 +22,13 @@ header
     justify-content: space-around;
     flex-direction: column;
     margin-bottom: 20px;
-    position: fixed;
 }
 header h1
 {
     font-family: Haettenschweiler, 'Arial Narrow Bold', Impact;
     color: #cccaca;
     font-weight: 300;
+
 }
 
 .frases-tecnologia
