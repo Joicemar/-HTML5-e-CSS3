@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    background-color: beige;
+    transition: .5s;
+}
+.banner.night
+{
+    background: #333;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo
+{
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header .logo span
+{
+    color: cornflowerblue;
+}
+
+header ul
+{
+    display: flex;
+    gap: 40px;
+}
+
+header ul li
+{
+    list-style: none;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #333;
+    transition: 0.5s;
+}
+
+.content
+{
+    position: relative;
+    max-width: 700px;
+    z-index: 10;
+}
+
+.content h3
+{
+    font-size: 2em;
+    color: black;
+    font-weight: 200;
+    transition: 05s;
+}
+
+.content h2
+{
+    font-size: 5.5em;
+    color: #333;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.content h2 span
+{
+    color: #e91e63;
+}
+
+.content p
+{
+    font-size: 1.2em;
+    color: #666;
+    margin: 10px 0;
+    transition: .5s;
+}
+
+.content button
+{
+    position: relative;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.content button.chat
+{
+    background: transparent;
+    color: #333;
+}
+
+.content button.chat ion-icon
+{
+    position: relative;
+    color: #e91e63;
+    font-size: 1.5em;
+    top: 5px;
+}
+
+.sci
+{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.sci li
+{
+    list-style: none;
+}
+
+.sci li a
+{
+    text-decoration: none;
+    font-size: 1.7em;
+    color: #333;
+}
+
+.sci li a:hover
+{
+    color: cornflowerblue;
+}
+
+.dayNight
+{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+}
+.banner.night .dayNight
+{
+    background: #444;
+    color: #fff;
+}
+.dayNight ion-icon:nth-child(2),
+.banner.night ion-icon:nth-child(1)
+{
+    display: none; /*Pega o segundo elemento de dentro da div da tag ion-icon
+    , depois o troca na hora do click*/
+}
+.banner.night ion-icon:nth-child(2)
+{
+    display: block;
+}
+
+.banner.night header .logo
+.banner.night .content h2,
+.banner.night .content h3,
+.banner.night .content p,
+.banner.night .content button.chat,
+.banner.night header ul li a,
+.banner.night .icon-inner
+{
+    color: #fff;
+} 
+.sci.night
+{
+    color: cornflowerblue;
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    gap: 20px;
+
+}
+.sci.night li a
+{
+    text-decoration: none;
+    font-size: 1.7em;
+    color: #333;
+}
+
+.sci.night li a:hover
+{
+    color: cornflowerblue;
+}
+
+.colors
+{
+    position: absolute;
+    right: 70px;
+    max-width: 800px;
+    animation: animateColor 5s ease-in-out infinite;
+}
+@keyframes animateColor
+{
+    0%,100%
+    {
+        transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translateY(50px);
+    }
+}
+
+.men
+{
+    position: relative;
+    right: 0px;
+    width: 400px;
+    bottom: 0;
+    max-height: 85vh;
+    animation: animateMen 7s ease-in-out infinite;
+}
+@keyframes animateMen
+{
+    0%,100%
+    {
+        transform: translateX(0px);
+    }
+    50%
+    {
+        transform: translateX(-50px);
+    }
+}

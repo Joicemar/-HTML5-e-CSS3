@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo"><span>My</span>Portfolio_</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h3>hey_</h3>
+            <h2>I am <span class="texto" id="text">Jhon</span></h2>
+            <p>
+                Pensamentos: É praticando que se aprende. <br>
+                O que trás resuldades é fazer a diferença.
+            </p>
+            <button>Hire me</button>
+            <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon> Let's Chat</button>
+        </div>
+        <img src="colors.png" class="colors">
+        <img src="men2.png" class="men">
+        <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-discord"></ion-icon></a></li>
+        </ul>
+
+        <div class="dayNight">
+            <ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script>
+
+        let typingText = new Typed("#text", {
+            strings : ["Joicemar", "Designer", "Coder", "Youtuber"],
+            loop : true,
+            typeSpeed : 100, 
+            backSpeed : 50,
+            backDelay : 1000
+        })
+
+        let banner = document.querySelector('.banner');
+        let daynight = document.querySelector('.dayNight');
+        let sci = document.querySelector('.sci');
+        daynight.onclick = function(){
+            banner.classList.toggle('night')
+            sci.classList.toggle('night')
+        }
+    </script>
+
+</body>
+</html>
