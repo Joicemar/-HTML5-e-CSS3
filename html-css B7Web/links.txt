@@ -1,0 +1,1 @@
+Biblioteca normalize para retirar bugs de compatibilidade com diferentes navegadores.

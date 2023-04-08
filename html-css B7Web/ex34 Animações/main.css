@@ -1,0 +1,32 @@
+
+
+@keyframes exemplo{
+    0% {background-color: red;}
+    
+    25% {background-color: rgb(0, 255, 13);}
+    50% {background-color: blue;}
+    75% {background-color: yellow;}
+    100% {background-color: rgb(107, 0, 128);}
+        
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(100px);
+    }
+}
+
+.exemplo {
+    background-color: rgb(250, 169, 47);
+    width: 200px;
+    height: 200px;
+    /*
+    animation-name: exemplo;
+    animation-duration: 8s;
+    */
+    animation-delay: 2s;/*tempo para começar*/
+    animation-iteration-count: 3;/*quantas vezes repetir*/
+    animation: exemplo 6s ease-in-out infinite;/*repete infinitamente*/
+}

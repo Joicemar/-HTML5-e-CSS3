@@ -1,0 +1,19 @@
+
+
+
+
+body
+{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+.exemplo
+{
+    width: 600px;
+    height: 500px;
+    background-color: blue;
+    background: -moz-linear-gradient(blue, purple);
+    background: -o-linear-gradient(45deg,blue, purple);
+    background: -webkit-linear-gradient(45deg,  blue, purple);
+}
