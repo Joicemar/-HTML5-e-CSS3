@@ -1,0 +1,9 @@
+
+
+div
+{
+    width: 50%;
+    height: 290px;
+    border: solid 1px #333;
+    word-wrap: break-word; /*quebra a palavra para caber na div*/
+}

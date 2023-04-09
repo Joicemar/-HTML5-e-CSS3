@@ -1,0 +1,19 @@
+
+
+li{
+    color: black;
+    font-size: 22pt;
+    font-weight: 600;
+    list-style: none;
+    transition: all .2s linear;
+    padding: 10px;
+}
+ul
+{
+    display: flex;
+    gap: 32px;
+    background-color: rgb(163, 224, 226);
+}
+li:hover{
+    color: rgb(27, 99, 255);
+}
