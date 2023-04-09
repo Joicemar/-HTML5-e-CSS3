@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <style>
+        .container{
+            display: flex;
+            background-color: rgb(170, 170, 170);
+            flex-direction: row-reverse;
+        }
+        .div1{
+            background-color: rgb(255, 82, 82);
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            /*flex: 1; coloca todos distribuidos na tela no mesmo tamanho*/
+            flex: 1;
+        }
+        .div2{
+            background-color: rgb(255, 75, 75);
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            /*flex: 1; coloca todos distribuidos na tela no mesmo tamanho*/
+            flex: 1;
+        }
+        .div3{
+            background-color: rgb(255, 95, 95);
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            /*flex: 2; faz com que tenha o "dobro" do tamanho em relação aos outros*/
+            flex: 2.2;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+
+</body>
+</html>
