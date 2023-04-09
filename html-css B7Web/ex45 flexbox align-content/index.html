@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        * {
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+
+        strong {
+            color: rgb(255, 57, 57);
+            font-weight: 600;
+        }
+
+        .container {
+            display: flex;
+            width: 700px;
+            height: 500px;
+            background-color: darkgray;
+            margin: 10px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: center;
+        }
+
+        .container div {
+            width: 64px;
+            height: 64px;
+            background-color: #6670ff;
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><strong>align-content:</strong> é para quando temos mais de um conteúdo. Pode usar como se fosse o justify-content para linhas caso 
+    a linha quebre, ficará justificado conforme definido.</h2>
+    <h2>
+        Esta propriedade <strong>align-content:</strong> não tem efeito em contêineres flexíveis
+        de linha única (ou seja, aqueles com flex-wrap: nowrap)
+    </h2>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+</body>
+
+</html>

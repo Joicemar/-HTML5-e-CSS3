@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .container{
+            display: flex;
+            width: 700px;
+            height: 500px;
+            background-color: darkgray;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+        .container div{
+            width: 64px;
+            height: 64px;
+            background-color: #6670ff;
+            margin: 8px;
+        }
+        .container .diferente{
+            align-self: flex-end;
+            background-color: rgb(62, 221, 51);
+        }
+        
+        .container .seis
+        {
+            order: 1;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>O order: 2; faz com que aquela div fique na ordem especificada no flex.</h2>
+    <h2>O align-self faz com que aquela div tenha a própria configuração flex indepedente.</h2>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div class="diferente">6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div class="seis">6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>
