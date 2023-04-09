@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,6 +9,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=0'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/templates.css'>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -15,9 +17,114 @@
                 <a href=""><img src="assets/images/logo.png" alt=""></a>
             </div>
             <div class="menu">
-                Home
+                <nav>
+                    <ul>
+                        <li><a class="active" href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
+    <section id="banner">
+        <div class="container colunm">
+            <div class="banner_headline">
+                <h1>Top notch experience</h1>
+                <h2>Medicenter is a responsive template perfect for all screen sizes</h2>
+            </div>
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="title">
+                        Emergency Case
+                    </div>
+                    <div class="banner_description">
+                        If you need a doctor urgently outside of
+                        medicenter opening hours, call emergency
+                        appointment number for emergency service.
+                    </div>
+                    <a href="">Read more</a>
+                </div>
+                <div class="banner2">
+                    <div class="title">
+                        Doctors Timetable
+                    </div>
+                    <div class="banner_description">
+                        Here at medicenter we have individuals doctor's 
+                        lists. Click read more below to see services 
+                        and current timetable for our doctors.
+                    </div>
+                    <a href="">Read more</a>
+
+                </div>
+                <div class="banner3">
+                    <div class="title">
+                        Opening Hours
+                    </div>
+                    <div class="banner_description">
+                        <table>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>8.00 - 17.00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9.30 - 17.30</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>9.30 - 15.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Latest News</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        ...
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Departments</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        ...
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Make An Appointment</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        ...
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <script>
+        let activeMenu = document.querySelectorAll('.op');
+
+        activeMenu.onclick = function () {
+            activeMenu.classList.toggle("active");
+        }
+    </script>
 </body>
+
 </html>
