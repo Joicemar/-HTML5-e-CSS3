@@ -1,0 +1,30 @@
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 117, 117);
+}
+header
+{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    background-color: #d8d8d8;
+}
+.container
+{
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+}
+.menu
+{
+    
+}
