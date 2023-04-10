@@ -5,7 +5,6 @@
 body {
     margin: 0;
     padding: 0;
-    margin-bottom: 300px;
 }
 
 header {
@@ -16,7 +15,7 @@ header {
 }
 
 .container {
-    width: 990px;
+    width: 1190px;
     display: flex;
     justify-content: space-between;
 }
@@ -260,4 +259,150 @@ article .news_resume
 .container section
 {
     margin-right: 10px;
+}
+footer
+{
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    height: 650px;
+}
+.footer_menu
+{
+    display: flex;
+    flex: 1; /*Divide o conteudo*/
+}
+.footer_menu > div
+{
+    flex: 1;
+    color: #fff;
+    padding: 30px;
+    height: 70px;
+}
+.fm_1 {
+    background-color: #39aae1;
+    cursor: pointer;
+}
+
+.fm_2 {
+    background-color: #3765ff;
+    cursor: pointer;
+}
+
+.fm_3 {
+    background-color: #0400fc;
+    cursor: pointer;
+}
+.footer_area
+{
+    display: flex;
+}
+.footer_areaitem
+{
+    flex: 1;
+    color: #fff;
+}
+.flexcolumn
+{
+    flex-direction: column;
+}
+footer .widget_title_text
+{
+    color: #fff;
+}
+.footer_copy
+{
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    margin-top: 40px;
+}
+.footer_copy strong
+{
+    color: #777;
+}
+.footer_menu div div
+{
+    font-size: 22pt;
+    color: #eeeeee;
+}
+.footer_menu div p
+{
+    font-size: 11pt;
+}
+.footer_area .widget_title_bar
+{
+    margin-top: 10px;
+    width: 70px;
+    background-color: #39aae1;
+}
+/*Config do primeiro footer_area */
+.footer_area .widget_body div,
+.footer_area .widget_body p
+{
+    display: flex;
+    color: #777;
+    font-size: 11pt;
+    line-height: 25px;
+}
+.footer_area .widget_body p
+{
+    margin-top: 40px;
+}
+.footer_area .widget_body a
+{
+    color: #cacaca;
+    text-decoration: none;
+}
+.footer_table
+{
+    display: flex;
+    margin-top: 30px;
+}
+.footer_table > div
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.icons
+{
+    margin-top: 35px;
+}
+.icons a
+{
+    background-color: #222;
+    margin: 3px;
+    font-size: 22px;
+}
+.icons a i
+{
+    color: #555;
+    padding: 3px;
+    padding-inline: 5px;
+}
+/*------------*/
+.widget_body2,
+.widget_body3
+{
+    margin-top: 40px;
+    margin-left: 15px;
+}
+.widget_body2 p,
+.widget_body3 p
+{
+    color: #c7c7c7;
+    font-size: 11pt;
+    line-height: 25px;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.widget_body2 div,
+.widget_body3 div
+{
+    color: #37c0ff;
+    font-size: 11pt;
+    margin-bottom: 22px;
 }
