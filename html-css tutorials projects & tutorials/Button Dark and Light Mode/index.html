@@ -1,16 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+
+    <style>
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: #282238;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .ball {
+            width: 80px;
+            height: 80px;
+            background-color: #ccc;
+            border-radius: 50px;
+            margin-left: 5px;
+            margin-right: 5px;
+            position: relative;
+            left: 100px;
+            transition: .2s;
+        }
+        .container {
+            background-color: #030303;
+            height: 100%;
+            width: 100%;
+            transition: .3s;
+        }
+        .container.day .ball{
+            left: 10px;
+        }
+        .container.night{
+            background-color: #131313;
+        }
+        .container.day{
+            background-color: rgb(241, 241, 241);
+        }
+        .container.day .box{
+            background-color: #ccc;
+        }
+        .container.day .ball{
+            background-color: #0c0c0c;
+        }
+    </style>
+
 </head>
+
 <body>
-    <div id="toggle">
-        <i class="indicator"></i>
+    <div class="container">
+        <div class="box">
+            <div class="ball">
+            </div>
+        </div>
     </div>
+
+    <script>
+        let dayNight = document.querySelector(".box");
+        let container = document.querySelector(".container");
+        dayNight.addEventListener('click', function () {
+            if (container.classList.contains("day")) {
+                container.classList.remove("day");
+                container.classList.add("night");
+            } else {
+                container.classList.remove("night");
+                container.classList.add("day");
+            }
+        });
+    </script>
 </body>
+
 </html>
