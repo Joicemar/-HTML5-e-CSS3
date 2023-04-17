@@ -18,6 +18,9 @@ header {
     width: 1190px;
     display: flex;
     justify-content: space-between;
+    padding-left: 22px;
+    padding-right: 22px;
+
 }
 
 .logo {
@@ -205,6 +208,18 @@ tr {
     display: flex;
     flex-wrap: wrap;
 }
+.widget_body
+{
+    display: flex;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .3px;
+    font-size: 12pt;
+}
+.widget_body img
+{
+    width: 150px;
+}
 article
 {
     flex: 1; /*Coloca todos os article na mesma linha*/
@@ -265,7 +280,7 @@ footer
     background-color: #111;
     display: flex;
     justify-content: center;
-    height: 650px;
+    height: auto;
 }
 .footer_menu
 {
@@ -293,6 +308,7 @@ footer
     background-color: #0400fc;
     cursor: pointer;
 }
+
 .footer_area
 {
     display: flex;
@@ -375,6 +391,7 @@ footer .widget_title_text
     background-color: #222;
     margin: 3px;
     font-size: 22px;
+    height: 25px;
 }
 .icons a i
 {
@@ -405,4 +422,87 @@ footer .widget_title_text
     color: #37c0ff;
     font-size: 11pt;
     margin-bottom: 22px;
+}
+.menuMobile{
+    display: none;
+    width: 45px;
+    height: 41px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.mm_line{
+    height: 3px;
+    background-color: #0004d3;
+}
+/*Responsividade*/
+
+@media (max-width: 730px){
+    .banner_headline{
+        padding: 20px;
+    }
+    .banner_headline h1{
+        font-size: 55px;
+    }
+    .banner_headline h2{
+        font-size: 17px;
+    }
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+        
+    }
+    .container{
+        flex-direction: column;
+    }
+    #geral{
+        margin-top: 110px;
+        padding: 20px;
+    }
+    footer{
+        padding: 20px;
+        padding-top: 5px;
+        height: auto;
+    }
+    .footer_menu > div{
+        height: auto;
+    }
+    .icons a{
+        width: 51px;
+        margin: 8px;
+        font-size: 40px;
+    }
+    .footer_menu{
+        flex-direction: column;
+    }
+    .footer_area{
+        flex-direction: column;
+    }
+    header .container{
+        flex-direction: row;
+    }
+    .container nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+    header{
+        height: auto;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .footer_areaitem p{
+        font-size: 7pt;
+
+    }
 }

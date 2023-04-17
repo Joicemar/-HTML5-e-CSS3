@@ -10,6 +10,17 @@
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/templates.css'>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".menuMobile").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
 </head>
 
 <body>
@@ -20,6 +31,11 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li><a class="active" href="">HOME</a></li>
                         <li><a class="" href="">BLOG</a></li>
@@ -181,7 +197,17 @@
                         <div class="widget_title_bar"></div>
                     </div>
                     <div class="widget_body">
-                        ...
+                        <div class="foto-representante">
+                            <img src="https://media.istockphoto.com/id/892793616/photo/portrait-of-a-young-female-doctor.jpg?s=612x612&w=is&k=20&c=0AFP5rTIVLrFsgn-pi-oUJQUU1JJHsLactthFeswYLc="
+                                alt="">
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Sunt 
+                            enim quo nesciunt molestiae rem
+                            eligendi illum.
+                        </div>
                     </div>
                 </div>
                 <div class="widget">
@@ -190,7 +216,13 @@
                         <div class="widget_title_bar"></div>
                     </div>
                     <div class="widget_body">
-                        ...
+                        Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Sunt perspiciatis, iste ut cumque
+                        unde culpa asperiores odio nulla
+                        ullam quasi neque facilis error
+                        enim quo nesciunt molestiae rem
+                        eligendi illum.
                     </div>
                 </div>
             </aside>
@@ -244,10 +276,10 @@
                                 </div>
                             </div>
                             <div class="icons">
-                                <a href=""><i class='bx bxl-facebook-square'></i></a>
-                                <a href=""><i class='bx bxl-linkedin-square'></i></a>
-                                <a href=""><i class='bx bx-notepad'></i></a>
-                                <a href=""><i class='bx bx-envelope'></i></a>
+                                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                                <a href="#"><i class='bx bx-notepad'></i></a>
+                                <a href="#"><i class='bx bx-envelope'></i></a>
 
                             </div>
                         </div>
@@ -302,11 +334,10 @@
                 </div>
             </div>
             <div class="footer_copy">
-                <strong>Copyright</strong> - Todos os direitos reservados
+                <strong>Copyright &COPY; 2023 demo</strong> - Todos os direitos reservados
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
