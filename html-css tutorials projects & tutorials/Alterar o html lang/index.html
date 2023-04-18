@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+</head>
+<style>
+    button {
+        width: 200px;
+        height: 70px;
+        background-color: rgb(139, 240, 126);
+        font-size: 20pt;
+    }
+</style>
+
+<body>
+    <button>Clique Aqui</button>
+
+    <script>
+        var html_lang = document.querySelector("html");
+        var button = document.querySelector("button");
+
+        button.onclick = function () {
+            if (html_lang.getAttribute("lang") == "pt-br") {
+                html_lang.setAttribute("lang", "en");
+            } else {
+                html_lang.setAttribute("lang", "pt-br");
+            }
+        }
+    </script>
+</body>
+
+</html>
