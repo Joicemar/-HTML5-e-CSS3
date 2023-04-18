@@ -1,0 +1,20 @@
+
+
+body{
+    background-color: #178;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30vh;
+    width: 111px;
+    height: 30px;
+}
