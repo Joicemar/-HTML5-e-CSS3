@@ -1,0 +1,25 @@
+
+
+button {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(152, 235, 74);
+    font-size: 20pt;
+    color: aliceblue;
+}
+
+.textoEn,
+.textoPt
+{
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px #444;
+    display: none;
+}
+.textoEn.active {
+    display: block;
+}
+.textoPt.active {
+    display: block;
+}
