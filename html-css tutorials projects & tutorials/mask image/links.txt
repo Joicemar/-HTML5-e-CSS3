@@ -1,0 +1,3 @@
+https://www.softr.io/tools/svg-shape-generator
+
+https://base64.guru/converter/encode/image/svg
