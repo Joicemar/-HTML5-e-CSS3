@@ -24,9 +24,11 @@ section
 
 .blob
 {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
+    background-color: red;
 }
+
 /**/
 header ul {
     display: flex;
@@ -50,3 +52,7 @@ header ul li a {
 header ul li a:hover {
     color: yellow;
 }
+.blob-image {
+    transform: translateX(-70px) translateY(-40px);
+  }
+  

@@ -1,0 +1,11 @@
+Com width é possível definir a largura da imagem. 
+
+Para mover a imagem sem mover o SVG usar a propriedade CSS "transform":
+
+html: 
+<image class="blob-image" xlink:href="https://example.com/image.png" width="500" height="500" />
+
+css:
+.blob-image {
+  transform: translateX(50px) translateY(20px);
+}
