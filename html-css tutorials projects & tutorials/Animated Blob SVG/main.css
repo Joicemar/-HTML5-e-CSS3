@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #333;
+}
 
 section
 {
@@ -21,5 +24,9 @@ section
     position: absolute;
     width: 500px;
     height: 500px;
-    background-color: rgb(207, 65, 89);
+}
+/*Faz com que a copia dele tenha efeito de dissipar/luz*/
+.blob:nth-child(2)
+{
+    filter: blur(50px);
 }
