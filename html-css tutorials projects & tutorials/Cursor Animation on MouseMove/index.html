@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="content">
+        <h1>Cursor Follow on Mousemove</h1>
+        <p>
+            Texto Parágrafo qualquer. Curso Efect.
+        </p>
+
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove", function(e){
+            cursor.style.cssText = cursor2.style.cssText = "left: "
+            + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+    </script>
+</body>
+</html>
