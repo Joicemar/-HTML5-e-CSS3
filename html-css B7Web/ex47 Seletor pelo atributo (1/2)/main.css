@@ -1,0 +1,20 @@
+
+input, a {
+    display: block;
+}
+
+
+input[type]{
+    background-color: aqua
+}
+
+[required] {
+    background-color: red;
+}
+
+[name="texto"]{
+    font: small-caps bold 24px/1 sans-serif;
+    font: caption;
+    font: 1.2em "Fira Sans", sans-serif;
+    font: italic small-caps bold 16px/2 cursive;
+}

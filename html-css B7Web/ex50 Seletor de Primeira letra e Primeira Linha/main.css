@@ -1,0 +1,10 @@
+
+
+p::first-letter {
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p::first-line {
+    background-color: aquamarine;
+}

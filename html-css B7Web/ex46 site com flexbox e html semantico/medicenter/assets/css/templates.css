@@ -329,7 +329,7 @@ footer .widget_title_text
 .footer_copy
 {
     border-top: 1px solid #2c2c2c;
-    height: 40px;
+    height: auto;
     color: #fff;
     line-height: 40px;
     margin-top: 40px;

@@ -1,0 +1,11 @@
+
+
+div {
+    background-color: #555;
+    padding: 33px;
+    color: whitesmoke;
+}
+
+div:empty{
+    background-color: aquamarine;    
+}

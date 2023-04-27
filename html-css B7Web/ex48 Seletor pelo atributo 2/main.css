@@ -1,0 +1,21 @@
+
+
+[href*="economia"]{
+    background-color: aquamarine;
+}
+
+[href*="arte"]{
+    background-color: rgb(214, 171, 255);
+}
+
+[href^="https"]{ /*para valores que comecem com aquilo*/
+    border: solid 1px rgb(41, 41, 41);
+}
+[href^="http:"]{ /*para valores que comecem com aquilo*/
+    border: solid 1px rgb(112, 169, 255);
+}
+
+a[href$="htm"]{
+    margin: 112px;
+    background-color: red;
+}
