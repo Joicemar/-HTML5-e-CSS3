@@ -1,0 +1,55 @@
+
+
+body{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    position: relative;
+    text-align: center;
+    background-color: #333;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+}
+.card::after{
+    position: absolute;
+    content: '';
+    height: 150%;
+    width: 150%;
+    left: -25%;
+    top: -25%;
+    background: conic-gradient(
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        #a105b4,
+        rgb(255, 0, 64)
+    );
+    animation: animate 2s infinite;
+}
+@keyframes animate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.card::before{
+    content: '';
+    background: rgb(34, 51, 51);
+    position: absolute;
+    z-index: 3;
+    inset: 3px;
+}
+.content{
+    position: relative;
+    z-index: 4;
+}
