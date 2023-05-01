@@ -1,0 +1,14 @@
+
+
+
+div:nth-child(3){
+    padding: 20px 20px;
+    background-color: #333;
+    color: blanchedalmond;
+}
+div:nth-last-child(3){
+    /*Seleciona o segundo de baixo para cima*/
+    padding: 20px 20px;
+    background-color: #333;
+    color: blanchedalmond;
+}

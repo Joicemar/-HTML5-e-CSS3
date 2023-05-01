@@ -1,0 +1,5 @@
+
+
+body :not(p){
+    background-color: aquamarine;
+}

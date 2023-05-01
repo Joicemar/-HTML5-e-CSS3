@@ -1,0 +1,20 @@
+
+body{
+    text-align: center;
+}
+
+span{
+    background-color: green;
+}
+/*Antes do elemento*/
+span::before{
+    content: "-->>";
+}
+/*Depois do elemento*/
+span::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
