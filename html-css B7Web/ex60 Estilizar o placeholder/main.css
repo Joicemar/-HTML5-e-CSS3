@@ -1,0 +1,27 @@
+
+input{
+    width: 400px;
+    height: 50px;
+    font-size: 27px;
+    color: chocolate;
+}
+/*Modo para todos os navegadores modernos*/
+input::placeholder{
+    color: cornflowerblue ;
+}
+input::-webkit-input-placeholder {
+    /*Para navegadores da webkit, Blink, Edge*/
+    color: cornflowerblue ;
+}
+input:-moz-placeholder{ /*Firefox 4 ao 18*/
+    color: cornflowerblue ;
+}
+input::-moz-placeholder{ /*Firefox 19+*/
+    color: cornflowerblue ;
+}
+input:-ms-input-placeholder{ /* IE 10 e 11*/
+    color: cornflowerblue ;
+}
+input::-ms-input-placeholder{ /*Microsoft Edge*/
+    color: cornflowerblue ;
+}
