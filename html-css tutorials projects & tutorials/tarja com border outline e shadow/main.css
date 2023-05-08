@@ -1,0 +1,21 @@
+
+
+
+
+div{
+    padding: 16px;
+    height: 550px;
+    background-color: blueviolet;
+    text-align: center;
+    writing-mode: vertical-lr;
+    border: 7px solid rgb(255, 255, 255);
+    border-top: 0; border-bottom: 0;
+    box-shadow: 0px 20px 50px rgb(0, 0, 0);
+    position: relative;
+    left: 100px;
+    font-size: 22pt;
+    transform: rotate(220deg);
+    top: -110px;
+    color: white; 
+    outline: 0.5rem solid blueviolet; /*O outline fica por fora da borda*/
+}
