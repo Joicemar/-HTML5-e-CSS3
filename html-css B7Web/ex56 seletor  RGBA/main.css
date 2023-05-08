@@ -1,0 +1,17 @@
+
+
+body{
+    background-image: url("https://images.pexels.com/photos/722687/blue-sea-blue-water-water-ocean-722687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+}
+
+div{
+    background-color: rgba(0, 0, 0, 0.2);
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
