@@ -1,0 +1,8 @@
+*{ box-sizing: border-box;}
+div{
+    width: 200px;
+    height: 200px;
+    background-color: thistle;
+    border: 10px solid steelblue;
+    box-sizing: content-box; /*Anula o border-box*/
+}
