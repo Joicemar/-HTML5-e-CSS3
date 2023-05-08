@@ -1,0 +1,20 @@
+
+body{
+    background-color: #777;
+}
+.tarja {
+    width: 30px;
+    height: 640px;
+    padding: 20px;
+    background-color: cornflowerblue;
+    position: relative;
+    top: -140px;
+    left: 100px;
+    outline: 0.3rem solid rgb(255, 255, 255);
+    box-shadow: 0 0 0 14px cornflowerblue;
+    writing-mode: vertical-lr;
+    text-align: center;
+    color: white;
+    font-size: 24pt;
+    transform: rotate(220deg);
+}
