@@ -1,0 +1,17 @@
+
+
+body{
+    background-color: cornflowerblue;
+}
+div{
+    background-color: aquamarine;
+    width: 200px; height: 200px;
+    margin: auto;
+    transition: ease .6s;
+    border-radius: 50%;
+}
+div:hover{
+    transform: scale(1.2); /*Ao todo*/
+    transform: scale(1.3, 1.1); /*X e Y*/
+    transform: scaleX(0.5); /*Diminui na horizontal*/
+}
