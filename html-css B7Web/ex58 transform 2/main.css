@@ -1,0 +1,25 @@
+
+
+body{
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+}
+div:not(div:nth-child(3)){
+    transition: ease 5.1s;
+}
+div{
+    background-color: aquamarine;
+    width: 200px; height: 200px;
+    margin: auto;
+}
+div:nth-child(2){
+    transition: infinit ease 2s;
+    transform:rotate(-530deg)
+}
+div:hover{
+    transform:rotate(1030deg)
+}
+div:nth-child(3){
+    transform: skewX(30deg); /*skewX muda o grau dos angulos*/
+}
