@@ -1,0 +1,13 @@
+
+
+.container{
+    display: grid;
+    /*3 colunas de 100px*/
+    grid-template-columns: 100px 100px 100px;
+}
+.container > div{
+    padding: 20px;
+    background-color: rgb(55, 117, 199);
+    border-radius: 10px;
+    color: white; font-size: 20pt;
+}
