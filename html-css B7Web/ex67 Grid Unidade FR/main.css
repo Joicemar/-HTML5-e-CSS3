@@ -1,0 +1,14 @@
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 20px;
+}
+.container > div{
+    padding: 20px;
+    background-color: rgb(55, 117, 199);
+    border-radius: 10px;
+    color: white; font-size: 20pt;
+}

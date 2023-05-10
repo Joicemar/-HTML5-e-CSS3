@@ -4,6 +4,13 @@
     display: grid;
     /*3 colunas de 100px*/
     grid-template-columns: 100px 100px 100px;
+    /*duas colunas automaticas*/
+    grid-template-columns: auto auto;
+    /*Uma coluna automatica e duas com 100px*/
+    grid-template-columns: auto 100px 100px;
+    /*3 linhas nas medias e o restante automatico*/
+    grid-template-rows: 70px 200px 300px;
+    gap: 20px;
 }
 .container > div{
     padding: 20px;
