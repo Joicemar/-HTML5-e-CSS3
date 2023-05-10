@@ -1,0 +1,13 @@
+
+
+.container{
+    display: grid;
+    /*define 3 colunas com 1 fração do espaço disponivel*/
+    grid-template-columns: repeat(3, 1fr);
+}
+.container > div{
+    padding: 20px;
+    background-color: rgb(55, 117, 199);
+    border-radius: 10px;
+    color: white; font-size: 20pt;
+}
