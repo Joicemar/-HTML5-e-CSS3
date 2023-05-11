@@ -1,0 +1,54 @@
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+:root{
+    --font: "Poppins";
+}
+body{
+    display: grid;
+    justify-content: center;
+    background-color: #0a0a0a;
+}
+ul{
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 300px;
+    position: relative;
+    margin-block: 50%;
+    align-items: center;
+}
+ul li{
+    padding: 16px;
+}
+ul li a{
+    font-size: 2em;
+    font-weight: 500;
+    color: azure;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.cursor{
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+ul li:hover ~ .cursor {
+    transform: translate(-50%, -50%) scale(2);
+    background: #222;
+    box-shadow: 0 0 0 100vh #fff;
+}
