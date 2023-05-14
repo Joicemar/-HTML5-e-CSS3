@@ -1,0 +1,18 @@
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: 55px repeat(3, 100px) 200px;
+    grid-template-columns: repeat(2, 100px 300px 50px);
+    grid-template-columns: 1fr 2fr;
+    /*auto-fill repete o máximo de colunas que caber na tela*/
+    grid-template-columns: repeat(auto-fill, 300px); 
+
+    gap: 20px;
+}
+.container > div{
+    padding: 20px;
+    background-color: rgb(55, 117, 199);
+    border-radius: 10px;
+    color: white; font-size: 20pt;
+}
