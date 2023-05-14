@@ -1,0 +1,21 @@
+
+.container{
+    background-color: #333;
+    height: 100vh;
+    display: grid;
+    /*Estrutura a seguir aplica a quantia de colunas, o mínimo e o máximo de largura*/
+    grid-template-columns: repeat(3, minmax(50px, 250px)); 
+    /*minmax aplica o mínimo e se não couber se adapta até o máximo*/
+    grid-auto-rows: minmax(120px, 250px);
+    justify-content: center;
+    align-content: center;
+    justify-content: start;
+    align-content: center;
+    gap: 20px;
+}
+.container > div{
+    padding: 20px;
+    background-color: rgb(55, 117, 199);
+    border-radius: 10px;
+    color: white; font-size: 20pt;
+}
