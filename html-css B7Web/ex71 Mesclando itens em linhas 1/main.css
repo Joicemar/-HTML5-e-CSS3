@@ -1,7 +1,7 @@
 
-
+body{ background-color: #333; }
 .box{
-    background-color: wheat;
+    background-color: rgb(63, 63, 63);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 100px;
@@ -15,8 +15,24 @@
     font-size: 20px;
 }
 .i3{
+    /*Essa coluna ocupa da coluna 1 até a 3,
+    começa a contar da lateral esquerda como uma.*/
     grid-column-start: 1;
     grid-column-end: 3;
+    /*Essa linha vai da 2 e termina na 4*/
     grid-row-start: 2;
     grid-row-end: 4;
+    background-color: rgb(214, 41, 64);
+}
+.i13{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: rgb(95, 192, 95);
+}
+.i14 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: rgb(115, 76, 189);
 }
