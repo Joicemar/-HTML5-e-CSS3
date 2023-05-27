@@ -1,0 +1,18 @@
+
+
+.card {
+    display: flex;
+    font-size: 27pt;
+    width: 100px;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.card > a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: beige;
+    padding-inline: 7px;
+    color: rgb(0, 214, 0);
+    text-decoration: none;
+}

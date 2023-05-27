@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>increment and decrement</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<style>
+    .product-card {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 300px;
+    }
+
+    .quantity {
+        margin-top: 10px;
+    }
+
+    input[type="number"] {
+        width: 60px;
+    }
+</style>
+
+<body>
+
+    <div class="product-card">
+        <h2>Nome do Produto</h2>
+        <p>Preço: R$ 10,00</p>
+        <div class="quantity">
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" min="0" value="0">
+        </div>
+    </div>
+
+
+    <script src='main.js'>
+        const quantityInput = document.getElementById('quantity');
+
+        quantityInput.addEventListener('change', function () {
+            if (quantityInput.value < 0) {
+                quantityInput.value = 0;
+            }
+        });
+
+    </script>
+</body>
+
+</html>
