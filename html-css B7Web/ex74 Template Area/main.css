@@ -1,0 +1,31 @@
+
+
+.container{
+    background-color: aquamarine;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: /*Do jeito que ordenar aqui será ordenado no grid*/
+        "item1 item1 item2"
+        "item3 . item2"
+        ". item4 item4"
+    ;
+}
+
+.item{
+    background-color: rgb(63, 147, 243);
+    border-radius: 10px;
+    padding: 20px;
+    color: aliceblue;
+}
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
