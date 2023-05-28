@@ -1,0 +1,23 @@
+
+body{ background-color: #333; }
+.box{
+    background-color: rgb(63, 63, 63);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+
+.item{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.i1{
+    /*Inicio e fim da coluna com uma linha só*/
+    grid-column: 1/ span 2;
+    /*O span conta pelo elemento todo e não por linhas*/
+    grid-row: 1/3;
+}
