@@ -1,7 +1,9 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -12,9 +14,23 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #fff;
+  overflow-x: hidden;
 }
-body section {
-  max-width: 1040px;
+body .button {
+  text-decoration: none;
+  padding: 10px 40px;
+  background-color: #b28756;
+  align-self: flex-start;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.4s;
+}
+body .button:hover {
+  transform: scale(0.95);
+}
+body section:not(.banner) {
+  padding-inline: 30px;
   margin: auto;
 }
 body header {
@@ -22,8 +38,11 @@ body header {
   height: 100px;
 }
 body header .header {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100px;
 }
 body header .header .logo img {
@@ -43,6 +62,7 @@ body header .header .menu nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 13px;
   color: #fff;
   padding-inline: 10px;
   display: flex;
@@ -51,17 +71,288 @@ body header .header .menu nav ul li a {
   align-items: center;
 }
 body header .header .menu nav ul li a.active, body header .header .menu nav ul li a:hover {
-  border-color: #B28756;
+  border-color: #b28756;
   border-width: 100%;
   color: hsla(0, 0%, 100%, 0.7);
 }
-body main {
+@media (max-width: 955px) {
+  body header .header .menu nav ul li a {
+    font-size: 11px;
+  }
+}
+body main .banner {
   background-color: #333;
   height: calc(100vh - 100px);
   background-image: url("../images/bg.jpg");
   background-position: bottom;
   background-size: cover;
+  overflow: hidden;
 }
-body .banner {
+body main .banner .sliders {
+  width: 1000vw;
+  height: 100%;
+}
+body main .banner .sliders .slide {
+  width: 100vw;
+  height: 100%;
   height: calc(100vh - 100px);
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+  vertical-align: top; /* Adicionado para posicionar no topo */
+}
+body main .banner .sliders .slide .slidearea {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  flex-direction: column;
+  gap: 26px;
+}
+body main .banner .sliders .slide .slidearea h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 48px;
+}
+body main .banner .sliders .slide .slidearea h1 span {
+  color: #b28756;
+}
+body main .banner .sliders .slide .slidearea h2 {
+  text-transform: uppercase;
+}
+body main .banner .sliders .slide .slidearea a {
+  text-transform: uppercase;
+  padding: 12px 40px;
+  background-color: #b28756;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 12pt;
+  font-weight: bold;
+  transition: 0.4s;
+}
+body main .banner .sliders .slide .slidearea a:hover {
+  transform: scale(0.95);
+}
+body main .banner .sliders-pointers {
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+body main .banner .sliders-pointers .pointer {
+  padding: 6px;
+  border-radius: 50%;
+  border: 3px solid #b28756;
+  cursor: pointer;
+}
+body main .banner .sliders-pointers .active {
+  background-color: #b28756;
+}
+body main .default {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+body main .default .section-tittle,
+body main .default .section-desc {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body main .default .section-tittle {
+  font-size: 20px;
+  color: #222;
+}
+body main .default .section-desc {
+  font-size: 12px;
+  color: #bbb;
+  margin-block: 20px;
+}
+body main .default .section-body {
+  max-width: 1140px;
+  margin: auto;
+  min-height: 100px;
+}
+body main .default .section-body .section-about-us {
+  display: flex;
+  gap: 10px;
+}
+body main .default .section-body .section-about-us .section-right {
+  text-align: center;
+  flex: 1;
+}
+body main .default .section-body .section-about-us .section-right img {
+  width: 100%;
+  box-shadow: 0 7px 15px #222;
+}
+body main .default .section-body .section-about-us .section-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body main .default .section-body .section-about-us .section-left p {
+  text-align: left;
+  line-height: 25px;
+}
+body main .light {
+  background-color: #f7f7f7;
+}
+body main .light .section-tittle {
+  color: #222;
+}
+body main .light .section-body {
+  color: #222;
+}
+body main .dark {
+  background-color: #050505;
+}
+body main .dark .section-tittle {
+  color: #fff;
+}
+body main .dark .section-body {
+  color: #fff;
+}
+body main .dark .section-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: 200px;
+}
+body main .dark .section-services .section-service {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #333333;
+  padding: 10px;
+}
+body main .dark .section-services .section-service:nth-child(1) {
+  border-left: 1px solid #333333;
+}
+body main .dark .section-services .section-service img {
+  transform: scale(1.3);
+}
+body main .dark .section-services .section-service h4 {
+  font-size: 21px;
+  text-transform: uppercase;
+  margin-block: 20px 10px;
+}
+body main .dark .section-services .section-service p {
+  font-size: 13px;
+  color: #bbb;
+}
+body main .section-projects .section-projects--filters ul {
+  display: grid;
+  list-style: none;
+  justify-content: center;
+  border-radius: 25px;
+  border: solid 1px #444;
+  background-color: #ccc;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  overflow: hidden;
+  grid-template-areas: "li li2 li3 li4 li5 li6";
+}
+body main .section-projects .section-projects--filters ul li {
+  cursor: pointer;
+  padding: 10px 30px;
+  font-weight: 600;
+  border-top: 1px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-right: 1px solid #777;
+  transition: 0.5s;
+  grid-area: li;
+}
+body main .section-projects .section-projects--filters ul li:nth-child(2) {
+  grid-area: li2;
+}
+body main .section-projects .section-projects--filters ul li:nth-child(3) {
+  grid-area: li3;
+}
+body main .section-projects .section-projects--filters ul li:nth-child(4) {
+  grid-area: li4;
+}
+body main .section-projects .section-projects--filters ul li:nth-child(5) {
+  grid-area: li5;
+}
+body main .section-projects .section-projects--filters ul li:nth-child(1) {
+  border-left: none;
+}
+body main .section-projects .section-projects--filters ul li:nth-last-child(1) {
+  grid-area: li6;
+  border-right: none;
+}
+body main .section-projects .section-projects--filters ul li:hover, body main .section-projects .section-projects--filters ul li.active {
+  background-color: #333;
+  color: #d6d6d6;
+  border-bottom: 3px solid #b28756;
+}
+@media (max-width: 768px) {
+  body main .section-projects .section-projects--filters ul li:nth-child(3) {
+    border-right: none;
+  }
+}
+@media (max-width: 768px) {
+  body main .section-projects .section-projects--filters ul {
+    grid-template-areas: "li li2 li2 li2 li3 li3 li3" "li4 li4 li5 li5 li5 li5 li6";
+    padding-top: 3px;
+  }
+}
+body main .section-projects .section-projects--photos {
+  width: 100vw;
+  max-width: 1140px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 250px;
+  gap: 10px;
+}
+body main .section-projects .section-projects--photos .section-projects--photo {
+  overflow: hidden;
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body main .section-projects .section-projects--photos .section-projects--photo .featured-img,
+body main .section-projects .section-projects--photos .section-projects--photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .section-projects .section-projects--photos .section-projects--photo .section-projects--photoinfo {
+  /*para a div cobrir toro o espaço da imagem*/
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  position: absolute;
+  bottom: -100%;
+  transition: 0.4s ease all;
+}
+body main .section-projects .section-projects--photos .section-projects--photo .section-projects--photoinfo h4 {
+  cursor: pointer;
+  font-size: 27px;
+  padding: 7px;
+  transition: 0.4s ease all;
+}
+body main .section-projects .section-projects--photos .section-projects--photo .section-projects--photoinfo h4:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+body main .section-projects .section-projects--photos .section-projects--photo:hover > .section-projects--photoinfo {
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
