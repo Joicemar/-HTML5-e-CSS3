@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+
+    <div class="box">Magnetic</div>
+    <script>
+        let box = document.querySelector('.box');
+        box.addEventListener('mousemove', (e) => {
+            let x = e.offsetX;
+            let y = e.offsetY;
+            let boxWidth = box.clientWidth;
+            let boxHeight = box.clientHeight;
+            let mouseX = (x - boxWidth/2);
+            let mouseY = (y - boxHeight/2);
+            box.style.transform = `translateX(${mouseX}px)
+            translateY(${mouseY}px)`;
+        });
+       
+
+    </script>
+</body>
+
+</html>
