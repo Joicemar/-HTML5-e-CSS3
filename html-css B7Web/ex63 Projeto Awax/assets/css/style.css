@@ -58,6 +58,12 @@ body header .header .menu nav ul {
   display: flex;
   list-style: none;
 }
+@media (max-width: 768px) {
+  body header .header .menu nav ul {
+    flex-direction: column;
+    top: 0;
+  }
+}
 body header .header .menu nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -153,6 +159,14 @@ body main .banner .sliders-pointers .pointer {
 body main .banner .sliders-pointers .active {
   background-color: #b28756;
 }
+@media (max-width: 768px) {
+  body main .banner .sliders .slide .slidearea h1,
+  body main .banner .sliders .slide .slidearea h2,
+  body main .banner .sliders .slide .slidearea span,
+  body main .banner .sliders .slide .slidearea a {
+    font-size: 18px;
+  }
+}
 body main .default {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -175,22 +189,43 @@ body main .default .section-desc {
 body main .default .section-body {
   max-width: 1140px;
   margin: auto;
-  min-height: 100px;
 }
 body main .default .section-body .section-about-us {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-auto-rows: auto;
   gap: 10px;
+}
+@media (max-width: 464px) {
+  body main .default .section-body .section-about-us {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+@media (max-width: 764px) {
+  body main .default .section-body .section-about-us .section-right {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  body main .default .section-body .section-about-us .section-left {
+    grid-row-start: 3;
+    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 body main .default .section-body .section-about-us .section-right {
   text-align: center;
-  flex: 1;
 }
 body main .default .section-body .section-about-us .section-right img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: 0 7px 15px #222;
 }
 body main .default .section-body .section-about-us .section-left {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -221,15 +256,16 @@ body main .dark .section-services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-auto-rows: 200px;
+  border-inline: 1px solid #333333;
+  margin-top: 20px;
 }
 body main .dark .section-services .section-service {
   flex: 1;
+  min-width: 220px;
+  height: 200px;
   text-align: center;
-  border-right: 1px solid #333333;
+  border-inline: 1px solid #333333;
   padding: 10px;
-}
-body main .dark .section-services .section-service:nth-child(1) {
-  border-left: 1px solid #333333;
 }
 body main .dark .section-services .section-service img {
   transform: scale(1.3);
@@ -242,6 +278,10 @@ body main .dark .section-services .section-service h4 {
 body main .dark .section-services .section-service p {
   font-size: 13px;
   color: #bbb;
+}
+body main .section-projects {
+  display: grid;
+  gap: 32px;
 }
 body main .section-projects .section-projects--filters ul {
   display: grid;
@@ -299,6 +339,16 @@ body main .section-projects .section-projects--filters ul li:hover, body main .s
   body main .section-projects .section-projects--filters ul {
     grid-template-areas: "li li2 li2 li2 li3 li3 li3" "li4 li4 li5 li5 li5 li5 li6";
     padding-top: 3px;
+    align-self: center;
+    justify-self: center;
+  }
+}
+@media (max-width: 468px) {
+  body main .section-projects .section-projects--filters ul {
+    font-size: 15px;
+  }
+  body main .section-projects .section-projects--filters ul li {
+    padding: 10px 20px;
   }
 }
 body main .section-projects .section-projects--photos {
@@ -355,4 +405,74 @@ body main .section-projects .section-projects--photos .section-projects--photo .
 }
 body main .section-projects .section-projects--photos .section-projects--photo:hover > .section-projects--photoinfo {
   bottom: 0;
+}
+body main .team {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7333333333), rgba(8, 8, 8, 0.7254901961)), url("../images/view-new-york-city-usa.jpg");
+  background-position: center;
+  background-size: cover;
+}
+body main .section-teams {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .section-teams .team-select {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+body main .section-teams .team-select div {
+  padding: 6px;
+  border-radius: 50%;
+  border: 3px solid #b28756;
+  cursor: pointer;
+}
+body main .section-teams .team-select .active {
+  background-color: #b28756;
+}
+body main .section-teams .section-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+body main .section-teams .section-team .section-team-people {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 30px;
+  gap: 25px;
+  max-width: 320px;
+  background-color: #ffffff;
+  color: #333;
+}
+body main .section-teams .section-team .section-team-people img {
+  width: 80%;
+}
+body main .section-teams .section-team .section-team-people h4 p {
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+body main .section-teams .section-team .section-team-people ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+body main .section-teams .section-team .section-team-people ul li {
+  background-color: #858585;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .section-teams .section-team .section-team-people ul li img {
+  width: 13px;
+  height: 13px;
+}
+body main .section-teams .section-team .section-team-people ul li:hover {
+  background-color: #b28756;
 }/*# sourceMappingURL=style.css.map */
