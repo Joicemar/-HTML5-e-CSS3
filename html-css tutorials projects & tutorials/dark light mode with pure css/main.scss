@@ -1,0 +1,68 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+    input[type="checkbox"]{
+        display: none;
+    }
+    label{
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        border: 2px solid gray;
+        border-radius: 30px;
+        padding: 0px 6px;
+        padding-top: 4px;
+        cursor: pointer;
+        user-select: none;
+
+        .fa-sun svg{
+            font-size: 25px;
+            text-shadow: 0px 0px 20px orange;
+            transform: translateX(22px);
+            transition: .3s;
+        }
+        .fa-moon svg{
+            font-size: 25px;
+            text-shadow: 0px 0px 20px white;
+            fill: #fff;
+            opacity: 0;
+            transition: .3s;
+        }
+    }
+    #switch-button:checked ~ label{
+        .fa-sun svg{
+            opacity: 0;
+            transform: translateX(0px);
+        }
+        .fa-moon svg{
+            opacity: 1;
+            transform: translateX(-25px);
+        }
+    }
+    #switch-button:checked ~ .content{
+        background-color: #000;
+        color: #fff;
+    }
+    .content{
+        height: 100vh;
+        padding: 60px 40px;
+        text-align: justify;
+        box-sizing: border-box;
+        transition: .2s;
+
+        p, h3{
+            padding: 8px;
+        }
+    }
+}
