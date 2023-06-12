@@ -1,0 +1,14 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:is(article, section, div) h2{
+    color: #fff;
+    background-color: crimson;
+}
+
+h2:is(:hover, :active, :target){
+    color: red;
+    background: #000;
+}

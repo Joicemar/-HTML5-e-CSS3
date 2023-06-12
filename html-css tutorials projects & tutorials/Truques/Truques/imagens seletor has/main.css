@@ -1,0 +1,20 @@
+
+
+.img-container{
+    width: 300px;
+    margin: 0 auto;
+    background-color: slateblue;
+    margin-bottom: 20px;
+}
+
+img{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.img-container:has( .naruto){
+    background-color: crimson;
+    width: 400px;
+    border: 20px solid black;
+}
