@@ -1,0 +1,104 @@
+$fontFamily: "Roboto", sans-serif;
+
+body {
+    background-color: #ebebeb;
+    font-family: $fontFamily;
+    opacity: 0.8;
+    background-color: #dfdbe5;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='24' viewBox='0 0 12 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    display: flex;
+    min-height: 100vh;
+
+    .form {
+        background-color: #fff;
+        width: 90%;
+        margin: auto;
+        max-width: 300px;
+        padding: 4.5em 3em;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+        text-align: center;
+
+        .form__title {
+            font-size: 2rem;
+            margin-bottom: 0.5em;
+            @media(max-width:425px){
+                font-size: 1.8rem;
+            }
+        }
+        .form__paragrafo {
+            font-weight: 300;
+            .form__link{
+                font-weight: 400;
+                color: #000;
+            }
+            @media(max-width:425px){
+                font-size: 0.97rem;
+            }
+        }
+        .form__container {
+            margin-top: 3em;
+            display: grid;
+            gap: 2.5em;
+            .form__group {
+                position: relative;
+                color: #444;
+                .form__input{
+                    width: 100%;
+                    color: #706c6c;
+                    font-size: 1rem;
+                    padding: .6em .3em;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid #555;
+                    font-family: $fontFamily;
+
+                    &:focus + .form__label,
+                    &:not(:placeholder-shown) + .form__label{
+                        transform:  translateY(-12px) scale(.9);
+                        transform-origin: left top;
+                    }
+                    &:focus ~ .form_line,
+                    &:not(:placeholder-shown) ~ .form_line{
+                        transform: scale(1);
+                    }
+                    &:not(:placeholder-shown){
+                        color: #000;
+                    }
+                }
+                .form__label {
+                    font-weight: 400;
+                    color: #000;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    left: 5px;
+                    transform: translateY(10px);
+                    transition: .5s, #555 .3s;
+                    transition-duration: .5s;
+                }
+                .form_line{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: rgb(0, 31, 209);
+                    transform: scale(0);
+                    transform: left bottom;
+                    transition: .4s;
+                }
+            }
+            .form__submit{
+                background: rgb(31, 61, 231);
+                color: #fff;
+                font-family: $fontFamily;
+                font-weight: 300;
+                font-size: 1rem;
+                padding: .8em 0;
+                border: none;
+                border-radius: .5em;
+            }
+        }
+    }
+}
