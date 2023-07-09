@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Gradient Border</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.959);
+        }
+        .card{
+            width: 400px;
+            height: 200px;
+            border-radius: 12px;
+            background-color: #333333;
+        }
+        .cardborder{
+            width: 406px;
+            height: 206px;
+            background: linear-gradient(0deg,
+            #50ff24, 
+            #a724ff,
+            #a724ff,
+            #2041ff);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 40%;
+        }
+      
+    </style>
+</head>
+<body>
+    
+    <div class="cardborder">
+        <div class="card"></div>
+    </div>
+</body>
+</html>
