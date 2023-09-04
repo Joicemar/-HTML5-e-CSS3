@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/*
+*/
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&family=Srisakdi:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+html,
+body,
+main,
+nav,
+header,
+section,
+ol,
+ul,
+li,
+a,
+br,
+span,
+small,
+div,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+aside,
+footer,
+img,
+source,
+address,
+blockquote {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+}
+
+:root {
+    --font_passion: "Passion One", cursive;
+    --font_sririkdi: "Srisakdi", cursive;
+    --font_sriraka: "Sriracha", cursive;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: darkgray;
+    ::selection {
+        color: rgb(211, 211, 211);
+        background-color: rgb(56, 37, 65);
+    }
+}
+header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font_passion);
+    font-weight: 400;
+    font-size: clamp(1rem, 4vw, 2.5rem);
+}
+header p {
+    padding-bottom: 50px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-block: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    display: grid;
+    justify-content: center;
+}
+section.imagem {
+    background-color: #515151;
+    color: #fff;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p {
+    background-color: #00000073;
+    width: auto;
+    display: inline-block;
+    padding: 15px;
+    text-shadow: 2px 2px 1px #000;
+}
+section > p {
+    font-family: var(--font_sriraka);
+    font-size: clamp(1rem, 4vw, 2.5rem);
+    line-height: clamp(1rem, 4vw, 3rem);
+}
+section#img01 {
+    background-image: url(img/sergey-shmidt-koy6FlCCy5s-unsplash.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+section#img02 {
+    background-image: url(img/premium_photo-1679404108270-71b22febf4f2.avif);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
