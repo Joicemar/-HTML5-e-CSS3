@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    letter-spacing: 0.4px;
+    line-height: 1.6;
+    font-family: "Inter", sans-serif;
+    font-family: "Genos", sans-serif;
+    font-variant-ligatures: common-ligatures; /* permitir a exibição das ligaduras tipográficas comuns em um elemento de texto*/
+    text-rendering: optimizeLegibility; /*melhora a forma do texto em telas menores*/
+}
+html,
+body{
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: minmax(250px, 100vw);
+    height: 100vh;
+    min-height: 350px;
+    background-color: rgb(154, 153, 179);
+    position: relative;
+}
+
+.nav_section{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: 
+    black;
+    justify-content: space-around;
+}
+
+.nav_section ul li{
+    list-style: none;
+}
+.nav_section ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: clamp(14px, 1.8vw, 22px);
+}
+.about:hover ~ .nav_section{
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
