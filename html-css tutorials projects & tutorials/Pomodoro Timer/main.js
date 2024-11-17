@@ -38,10 +38,13 @@ function applySettings() {
 
     resetTimer(); // Reseta o temporizador para aplicar os novos valores
 }
-
+/*===============audio=======================*/
+// Carregar sons no formato OGG
+const workSound = new Audio('transition.mp3');
+const breakSound = new Audio('transition.mp3');
 // Função para iniciar o timer
 function startTimer() {
-    startTimer();
+    workSound.play();
     if (!isRunning) {
         isRunning = true;
         timerInterval = setInterval(() => {
@@ -51,10 +54,21 @@ function startTimer() {
             if (currentTime <= 0) {
                 clearInterval(timerInterval);
                 isRunning = false;
+
+                // Alternar entre trabalho e descanso
                 isFocusTime = !isFocusTime;
+
+                // Tocar som ao alternar
+                if (isFocusTime) {
+                    workSound.play(); // Toca som de trabalho
+                } else {
+                    breakSound.play(); // Toca som de descanso
+                }
+
+                // Atualizar status e redefinir o tempo
                 currentTime = isFocusTime ? focusTime : breakTime;
                 document.getElementById('status').textContent = isFocusTime ? "Focus Time" : "Break Time";
-                startTimer(); // Iniciar o próximo ciclo automaticamente
+                startTimer(); // Reiniciar o temporizador
             }
         }, 1000);
     }
@@ -85,37 +99,5 @@ document.getElementById('apply-settings').addEventListener('click', applySetting
 // Inicializar o relógio na carga da página
 updateClock();
 
-/*===============audio=======================*/
-// Carregar sons no formato OGG
-const workSound = new Audio('transition.mp3');
-const breakSound = new Audio('transition.mp3');
 
-function startTimer() {
-    if (!isRunning) {
-        isRunning = true;
-        timerInterval = setInterval(() => {
-            currentTime--;
-            updateClock();
 
-            if (currentTime <= 0) {
-                clearInterval(timerInterval);
-                isRunning = false;
-
-                // Alternar entre trabalho e descanso
-                isFocusTime = !isFocusTime;
-
-                // Tocar som ao alternar
-                if (isFocusTime) {
-                    workSound.play(); // Toca som de trabalho
-                } else {
-                    breakSound.play(); // Toca som de descanso
-                }
-
-                // Atualizar status e redefinir o tempo
-                currentTime = isFocusTime ? focusTime : breakTime;
-                document.getElementById('status').textContent = isFocusTime ? "Focus Time" : "Break Time";
-                startTimer(); // Reiniciar o temporizador
-            }
-        }, 1000);
-    }
-}

@@ -1,8 +1,14 @@
+@charset "UTF-8";
+
+:root{
+    ---font_color: #a5a5a5;
+}
+
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #333;
+    background: rgb(0, 0, 0);
+    color: var(---font_color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +18,7 @@ body {
 
 .container {
     text-align: center;
-    background: white;
+    background: rgb(31, 31, 31);
     padding: 20px 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -24,11 +30,14 @@ h1 {
 }
 
 .clock {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 20px 0;
     font-weight: bold;
+    padding-block: 16px;
 }
-
+#minutes, #seconds{
+    font-size: 4rem;
+}
 .controls button {
     padding: 10px 20px;
     font-size: 1rem;
@@ -61,8 +70,12 @@ h1 {
 #status {
     margin-top: 15px;
     font-size: 1.2rem;
-    color: #555;
+    color: var(---font_color);
 }
+.settings label, span{
+    font-size: 15pt;
+}
+
 /*==================input section====================*/
 /* styles.css */
 .settings {
@@ -78,9 +91,7 @@ h1 {
     align-items: center;
     gap: 5px;
 }
-.settings label, span{
-    font-size: 15pt;
-}
+
 .settings input {
     width: 90px;
     height: 30px;
