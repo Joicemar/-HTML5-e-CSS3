@@ -25,14 +25,14 @@ body{ background-color: #333; }
     background-color: rgb(214, 41, 64);
 }
 .i13{
-    grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 5;
     background-color: rgb(95, 192, 95);
 }
 .i14 {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
     background-color: rgb(115, 76, 189);
 }

@@ -105,11 +105,11 @@ bottom -20% para arredondar a parte de baico e top para parte de cima*/
     display: block;
 }
 /*Fim do efeito de arredondar e continuação do código*/
-
 .navigation ul li.active
 {/*Colori de branco a li(coluna) selecionada*/
     background: #fff;
 }
+
 .navigation ul li a
 {
     position: relative;

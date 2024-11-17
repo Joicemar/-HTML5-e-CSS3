@@ -5,9 +5,9 @@
     grid-template-columns: 55px repeat(3, 100px) 200px;
     grid-template-columns: repeat(2, 100px 300px 50px);
     grid-template-columns: 1fr 2fr;
-    /*auto-fill repete o máximo de colunas que caber na tela*/
+    /*auto-fill repete o máximo de colunas de 300px que caber na tela*/
     grid-template-columns: repeat(auto-fill, 300px); 
-
+    grid-template-rows: 1fr 2fr 1fr;
     gap: 20px;
 }
 .container > div{

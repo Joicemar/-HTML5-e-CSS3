@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pomodoro Timer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <div class="clock">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+
+        <!--==============settings inputs===================-->
+        <div class="settings">
+            <div>
+                <label>Work Time:</label>
+                <input type="number" id="work-minutes" value="25" min="0" max="3000"/> <span>min</span>
+                <input type="number" id="work-seconds" value="0" min="0" max="59" /> <span>sec</span>
+            </div>
+            <div>
+                <label>Break Time:</label>
+                <input type="number" id="break-minutes" value="5" min="0" max="3000"/> <span>min</span>
+                <input type="number" id="break-seconds" value="0" min="0" max="59" /> <span>sec</span>
+            </div>
+            <button id="apply-settings">Apply</button>
+        </div>
+        <!--=================Controls========================-->
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+        <p id="status">Focus Time</p>
+    </div>
+    <script src='main.js'></script>
+</body>
+
+</html>
